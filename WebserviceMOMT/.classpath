@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_6_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="src" path=".apt_generated">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="D:/MyEclipse/JavaLib/mysql-connector-java-5.1.22-bin.jar"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/MyConnection"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/MyDataGateway"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/MyUtility"/>
+	<classpathentry exported="true" kind="lib" path="D:/MyEclipse/JavaLib/Proxool/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/MyEclipse/JavaLib/Proxool/proxool-0.9.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/MyEclipse/JavaLib/Proxool/proxool-cglib.jar"/>
+	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.ws.xfire.MYECLIPSE_METRO_IMPL"/>
+	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.ws.xfire.MYECLIPSE_JAXWS_API"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

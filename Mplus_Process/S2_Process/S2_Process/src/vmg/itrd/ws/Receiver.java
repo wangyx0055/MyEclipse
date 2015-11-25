@@ -1,0 +1,19 @@
+/**
+ * Receiver.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package vmg.itrd.ws;
+
+// ICOM
+public interface Receiver extends java.rmi.Remote {
+	 public int insertMTQueueVMS(java.lang.String USER_ID, java.lang.String SERVICE_ID, java.lang.String MOBILE_OPERATOR, java.lang.String COMMAND_CODE, java.lang.String CONTENT_TYPE, java.lang.String INFO, java.lang.String SUBMIT_DATE, java.lang.String DONE_DATE, java.lang.String PROCESS_RESULT, java.lang.String MESSAGE_TYPE, java.lang.String REQUEST_ID, java.lang.String MESSAGE_ID, java.lang.String TOTAL_SEGMENTS, java.lang.String RETRIES_NUM, java.lang.String INSERT_DATE, java.lang.String NOTES, java.lang.String AMOUNT, java.lang.String CHANNEL_TYPE) throws java.rmi.RemoteException;
+	 public int insertVMSChargeOnline(java.lang.String USER_ID, java.lang.String SERVICE_ID, java.lang.String MOBILE_OPERATOR, java.lang.String COMMAND_CODE, java.lang.String CONTENT_TYPE, java.lang.String INFO, java.lang.String SUBMIT_DATE, java.lang.String DONE_DATE, java.lang.String PROCESS_RESULT, java.lang.String MESSAGE_TYPE, java.lang.String REQUEST_ID, java.lang.String MESSAGE_ID, java.lang.String TOTAL_SEGMENTS, java.lang.String RETRIES_NUM, java.lang.String INSERT_DATE, java.lang.String NOTES, java.lang.String SERVICE_NAME, java.lang.String CHANNEL_TYPE, java.lang.String CONTENT_ID, java.lang.String AMOUNT) throws java.rmi.RemoteException;	 
+	 public int insertMlist(java.lang.String mlistTable, java.lang.String USER_ID, java.lang.String SERVICE_ID, java.lang.String DATE, java.lang.String OPTIONS, java.lang.String FAILURES, java.lang.String LAST_CODE, java.lang.String AUTOTIMESTAMPS, java.lang.String COMMAND_CODE, java.lang.String REQUEST_ID, java.lang.String MESSAGE_TYPE, java.lang.String MOBILE_OPERATOR, java.lang.String MT_COUNT, java.lang.String MT_FREE, java.lang.String DURATION, java.lang.String AMOUNT, java.lang.String CONTENT_ID, java.lang.String SERVICE, java.lang.String COMPANY_ID, java.lang.String ACTIVE, java.lang.String CHANNEL_TYPE, java.lang.String REG_COUNT, java.lang.String DATE_RETRY) throws java.rmi.RemoteException;
+	 public int insertToMlistFromMlist(java.lang.String toMlistTable, java.lang.String fromMlistTable, java.lang.String registry_Again, java.lang.String userId, java.lang.String commandCode, java.lang.String serviceId) throws java.rmi.RemoteException;
+	 public int insertVmsChargePackage(java.lang.String USER_ID, java.lang.String SERVICE_ID, java.lang.String MOBILE_OPERATOR, java.lang.String COMMAND_CODE, java.lang.String CONTENT_TYPE, java.lang.String INFO, java.lang.String SUBMIT_DATE, java.lang.String DONE_DATE, java.lang.String PROCESS_RESULT, java.lang.String MESSAGE_TYPE, java.lang.String REQUEST_ID, java.lang.String MESSAGE_ID, java.lang.String TOTAL_SEGMENTS, java.lang.String RETRIES_NUM, java.lang.String INSERT_DATE, java.lang.String NOTES, java.lang.String SERVICE_NAME, java.lang.String CHANNEL_TYPE, java.lang.String CONTENT_ID, java.lang.String AMOUNT, java.lang.String DAY_NUM, java.lang.String RESULT_CHARGE, java.lang.String IS_THE_PACKET) throws java.rmi.RemoteException;
+	 public int insertVmsReChargePackage(java.lang.String USER_ID, java.lang.String SERVICE_ID, java.lang.String MOBILE_OPERATOR, java.lang.String COMMAND_CODE, java.lang.String CONTENT_TYPE, java.lang.String INFO, java.lang.String SUBMIT_DATE, java.lang.String DONE_DATE, java.lang.String PROCESS_RESULT, java.lang.String MESSAGE_TYPE, java.lang.String REQUEST_ID, java.lang.String MESSAGE_ID, java.lang.String TOTAL_SEGMENTS, java.lang.String RETRIES_NUM, java.lang.String INSERT_DATE, java.lang.String NOTES, java.lang.String SERVICE_NAME, java.lang.String CHANNEL_TYPE, java.lang.String CONTENT_ID, java.lang.String AMOUNT, java.lang.String DAY_NUM, java.lang.String RESULT_CHARGE, java.lang.String IS_THE_PACKET) throws java.rmi.RemoteException;
+
+}

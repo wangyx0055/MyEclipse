@@ -1,0 +1,43 @@
+
+/**
+ * ServiceException.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis2 version: 1.6.2  Built on : Apr 17, 2012 (05:33:49 IST)
+ */
+
+package org.csapi.www.wsdl.parlayx.wap_push.send.v1_0.service;
+
+public class ServiceException extends java.lang.Exception{
+
+    private static final long serialVersionUID = 1392690261129L;
+    
+    private org.csapi.www.wsdl.parlayx.wap_push.send.v1_0.service.SendPushMessageServiceStub.ServiceExceptionE faultMessage;
+
+    
+        public ServiceException() {
+            super("ServiceException");
+        }
+
+        public ServiceException(java.lang.String s) {
+           super(s);
+        }
+
+        public ServiceException(java.lang.String s, java.lang.Throwable ex) {
+          super(s, ex);
+        }
+
+        public ServiceException(java.lang.Throwable cause) {
+            super(cause);
+        }
+    
+
+    public void setFaultMessage(org.csapi.www.wsdl.parlayx.wap_push.send.v1_0.service.SendPushMessageServiceStub.ServiceExceptionE msg){
+       faultMessage = msg;
+    }
+    
+    public org.csapi.www.wsdl.parlayx.wap_push.send.v1_0.service.SendPushMessageServiceStub.ServiceExceptionE getFaultMessage(){
+       return faultMessage;
+    }
+}
+    

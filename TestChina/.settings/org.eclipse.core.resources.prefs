@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/com/goldsword/alao/soap/sync/common/NamedParameter.java=UTF-8
+encoding//src/com/goldsword/alao/soap/sync/common/NamedParameterList.java=UTF-8
+encoding//src/com/goldsword/alao/soap/sync/req/SyncChargeResultReq.java=UTF-8
+encoding//src/com/goldsword/alao/soap/sync/rsp/SyncChargeResultRsp.java=UTF-8
+encoding//src/com/goldsword/alao/soap/sync/server/GoldSwordServiceSoapBindingStub.java=UTF-8
+encoding//src/com/goldsword/alao/soap/sync/server/GoldSwordService_PortType.java=UTF-8
+encoding//src/com/goldsword/alao/soap/sync/server/GoldSwordService_Service.java=UTF-8
+encoding//src/com/goldsword/alao/soap/sync/server/GoldSwordService_ServiceLocator.java=UTF-8

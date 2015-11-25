@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.ws.xfire.MYECLIPSE_JAXWS_API"/>
+	<classpathentry exported="true" kind="con" path="melibrary.com.genuitec.eclipse.ws.xfire.MYECLIPSE_METRO_IMPL"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MyUtility"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MyDataProcess"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MyConnection"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MyDataHBStore"/>
+	<classpathentry kind="lib" path="D:/MyEclipse/JavaLib/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/MyEclipse/JavaLib/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="D:/MyEclipse/JavaLib/commons-httpclient-3.0.jar"/>
+	<classpathentry kind="lib" path="D:/MyEclipse/JavaLib/commons-logging-1.0.4.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MyDataSportVote"/>
+	<classpathentry kind="lib" path="D:/MyEclipse/TestChina/WebContent/WEB-INF/lib/axis.jar"/>
+	<classpathentry kind="lib" path="D:/MyEclipse/TestChina/WebContent/WEB-INF/lib/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="D:/MyEclipse/TestChina/WebContent/WEB-INF/lib/saaj.jar"/>
+	<classpathentry kind="lib" path="D:/MyEclipse/TestChina/WebContent/WEB-INF/lib/wsdl4j.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

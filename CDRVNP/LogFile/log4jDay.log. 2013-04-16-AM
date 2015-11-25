@@ -1,0 +1,7 @@
+2013-04-16 11:56:52,391 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(62) ----> Reading configuration file FTPConfig.properties 
+2013-04-16 11:57:13,495 |  INFO | [Thread-1] | class cdr.DBScanner:run(31) ----> CDRServer: Getting data from queue table 
+2013-04-16 11:57:17,882 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 
+2013-04-16 11:57:34,465 |  INFO | [Thread-1] | class cdr.DBScanner:run(55) ----> Ko co phep ftp cdr sang telco 
+2013-04-16 11:58:10,834 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(62) ----> Reading configuration file FTPConfig.properties 
+2013-04-16 11:58:10,864 |  INFO | [Thread-1] | class cdr.DBScanner:run(31) ----> CDRServer: Getting data from queue table 
+2013-04-16 11:58:10,866 |  INFO | [Thread-1] | class cdr.DBScanner:run(38) ----> Bat dau ghi cdr tu db ra file 

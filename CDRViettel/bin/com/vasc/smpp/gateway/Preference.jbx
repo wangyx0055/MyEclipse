@@ -1,0 +1,55 @@
+[PropertyInfo]
+asynchronous,boolean,false,false, , ,false,<default>
+bindMode,String,false,false, , ,false,<default>
+cdrEnabled,boolean,false,false, , ,false,<default>
+cdrfileExtension,String,false,false, , ,false,<default>
+cdroutFolder,String,false,false, , ,false,<default>
+cdrsentFolder,String,false,false, , ,false,<default>
+dataCoding,byte,false,false, , ,false,<default>
+db_DriverClassName,String,false,false, , ,false,<default>
+db_MaxConnections,int,false,false, , ,false,<default>
+db_password,String,false,false, , ,false,<default>
+db_URL,String,false,false, , ,false,<default>
+db_user,String,false,false, , ,false,<default>
+dest_addr_npi,byte,false,false, , ,false,<default>
+dest_addr_ton,byte,false,false, , ,false,<default>
+esmClass,byte,false,false, , ,false,<default>
+fileToLog,String,false,false, , ,false,<default>
+ipAddress,String,false,false, , ,false,<default>
+logToFile,int,false,false, , ,false,<default>
+maxNumOfSend,int,false,false, , ,false,<default>
+maxSMPerSecond,int,false,false, , ,false,<default>
+messageId,String,false,false, , ,false,<default>
+messageMap,Map,false,false, , ,false,<default>
+mobileOperator,String,false,false, , ,false,<default>
+password,String,false,false, , ,false,<default>
+port,int,false,false, , ,false,<default>
+prefixMap,Map,false,false, , ,false,<default>
+priorityFlag,byte,false,false, , ,false,<default>
+properties,Properties,false,false, , ,false,<default>
+protocolId,byte,false,false, , ,false,<default>
+receiveLogFolder,String,false,false, , ,false,<default>
+receiveTimeout,long,false,false, , ,false,<default>
+registeredDelivery,byte,false,false, , ,false,<default>
+replaceIfPresentFlag,byte,false,false, , ,false,<default>
+reportRequired,boolean,false,false, , ,false,<default>
+scheduleDeliveryTime,String,false,false, , ,false,<default>
+sendLogFolder,String,false,false, , ,false,<default>
+serviceType,String,false,false, , ,false,<default>
+shortMessage,String,false,false, , ,false,<default>
+smDefaultMsgId,byte,false,false, , ,false,<default>
+sourceAddressList,Collection,false,false, , ,false,<default>
+src_addr_npi,byte,false,false, , ,false,<default>
+src_addr_ton,byte,false,false, , ,false,<default>
+systemId,String,false,false, , ,false,<default>
+systemType,String,false,false, , ,false,<default>
+timeEnquireLink,int,false,false, , ,false,<default>
+timeRebind,int,false,false, , ,false,<default>
+timeResend,int,false,false, , ,false,<default>
+validityPeriod,String,false,false, , ,false,<default>
+validServiceIds,String[],false,false, , ,false,<default>
+[IconNames]
+
+
+
+

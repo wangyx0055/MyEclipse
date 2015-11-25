@@ -1,0 +1,100 @@
+package MyProcess;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+
+import MyGateway.sms_receive_forward;
+import MyProcessServer.Common;
+import MyProcessServer.ContentAbstract;
+import MyProcessServer.Keyword;
+import MyProcessServer.LocalConfig;
+import MyProcessServer.MsgObject;
+import MyUtility.MyLogger;
+
+
+public class GA126Process extends ContentAbstract
+{
+	MyLogger mLog = new MyLogger(this.getClass().toString());
+	Collection<MsgObject> MessOject = new ArrayList<MsgObject>();
+
+	@Override
+	protected Collection<?> getMessages(MsgObject msgObject, Keyword keyword) throws Exception
+	{
+		sms_receive_forward mForward = new sms_receive_forward(LocalConfig.PoolName_Gateway);
+
+		String Result = "-1";
+		String Receive_Date = "";
+		int RetryCount = 1;
+		String InsertDate = "";
+		String ReceiveDate = "";
+		String URL = "";
+		try
+		{
+			Receive_Date = new SimpleDateFormat("yyyyMMddHHmmss").format(msgObject.getTTimes());
+			InsertDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+			ReceiveDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(msgObject.getTTimes());
+			
+			String infor = java.net.URLEncoder.encode(msgObject.getUsertext(), "UTF-8");
+			String CommandCode = java.net.URLEncoder.encode(msgObject.getKeyword(), "UTF-8");
+			String RequestID =java.net.URLEncoder.encode(msgObject.getRequestid().toString(), "UTF-8");
+			
+			
+			mForward.Insert(msgObject.getUserid(), msgObject.getServiceid(), msgObject.getMobileoperator(), msgObject.getKeyword(),
+					msgObject.getUsertext(), InsertDate, ReceiveDate, "0", msgObject.getRequestid().toString(), "", Integer.toString(msgObject.getCpid()),
+					"0", Integer.parseInt(Result), RetryCount);
+			
+			String Para = "User_ID=" + msgObject.getUserid() + "&Service_ID=" + msgObject.getServiceid() + "&Command_Code=" + CommandCode + "&Info=" + infor
+					+ "&Request_ID=" + RequestID + "&Receive_Date=" + Receive_Date + "&Operator=" + msgObject.getMobileoperator()
+					+ "&UserName=PartnerFRQWE&Password=977CE426A4FABE0AC6F0FC39044831F3";
+
+			URL = "http://121.52.208.150:8088/statsynd/interface/hb/mo.jsp?" + Para;
+
+			try
+			{
+				Result = MyUtility.MyText.ReadFromURL(URL);
+			}
+			catch (Exception ex)
+			{
+				Result = MyUtility.MyText.ReadFromURL(URL);
+				RetryCount++;
+				mLog.log.error(ex);
+			}
+			
+			if (!Result.equalsIgnoreCase("0") && !Result.equalsIgnoreCase("1") && !Result.equalsIgnoreCase("-1"))
+				Result = "-1";
+
+			
+			return null;
+		}
+		catch (Exception ex)
+		{
+			mLog.log.error(Common.GetStringLog(msgObject), ex);
+			return null;
+		}
+		finally
+		{
+			try
+			{
+				mForward.Update_RetryCount(msgObject.getRequestid().toString(), RetryCount, Result);
+			}
+			catch (Exception ex)
+			{
+				msgObject.setUsertext(LocalConfig.MT_SYSTEM_ERROR);
+				msgObject.setContenttype(21);
+				msgObject.setMsgtype(1);
+
+				MessOject.add(new MsgObject(msgObject));
+
+				mLog.log.error(Common.GetStringLog(msgObject), ex);
+
+				return MessOject;
+			}
+
+			mLog.log.info(Common.GetStringLog(msgObject));
+		}
+
+	}
+
+}

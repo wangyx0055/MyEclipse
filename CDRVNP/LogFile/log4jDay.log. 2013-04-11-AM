@@ -1,0 +1,17 @@
+2013-04-11 09:56:30,419 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(62) ----> Reading configuration file FTPConfig.properties 
+2013-04-11 09:59:50,403 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(62) ----> Reading configuration file FTPConfig.properties 
+2013-04-11 10:00:37,360 |  INFO | [Thread-1] | class cdr.DBScanner:run(30) ----> CDRServer: Getting data from queue table 
+2013-04-11 10:00:47,367 |  INFO | [Thread-1] | class cdr.DBScanner:run(37) ----> Bat dau ghi cdr tu db ra file 
+2013-04-11 10:01:00,375 |  INFO | [Thread-1] | class cdr.DBScanner:run(53) ----> Ko co phep ftp cdr sang telco 
+2013-04-11 10:02:32,902 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(62) ----> Reading configuration file FTPConfig.properties 
+2013-04-11 10:02:38,240 |  INFO | [Thread-1] | class cdr.DBScanner:run(30) ----> CDRServer: Getting data from queue table 
+2013-04-11 10:02:46,069 |  INFO | [Thread-1] | class cdr.DBScanner:run(37) ----> Bat dau ghi cdr tu db ra file 
+2013-04-11 10:04:14,807 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(62) ----> Reading configuration file FTPConfig.properties 
+2013-04-11 10:04:39,164 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(62) ----> Reading configuration file FTPConfig.properties 
+2013-04-11 10:04:52,276 |  INFO | [Thread-1] | class cdr.DBScanner:run(30) ----> CDRServer: Getting data from queue table 
+2013-04-11 10:04:55,860 |  INFO | [Thread-1] | class cdr.DBScanner:run(37) ----> Bat dau ghi cdr tu db ra file 
+2013-04-11 10:05:16,621 |  INFO | [Thread-1] | class cdr.DBScanner:run(47) ----> Bat dau ftp cdr sang Telco  
+2013-04-11 10:05:19,859 |  INFO | [Thread-1] | class cdr.FTP2CDRServer:send2FtpServer(179) ----> FTP-SIZE:true 
+2013-04-11 10:05:19,862 |  INFO | [Thread-1] | class cdr.FTP2CDRServer:send2FtpServer(182) ----> FTP-RENAME: true 
+2013-04-11 10:05:19,864 |  INFO | [Thread-1] | class cdr.FTP2CDRServer:send2FtpServer(188) ----> backup file: from: .\CDROUT/HBCOM.20130411.txt to: .\CDRSENT//HBCOM.20130411.txt 
+2013-04-11 10:05:19,866 |  INFO | [Thread-1] | class cdr.FTP2CDRServer:send2FtpServer(192) ----> FTP : file name: HBCOM.20130411.txt# filesize: 75 bytes 

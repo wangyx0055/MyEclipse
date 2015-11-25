@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- the proxool configuration can be embedded within your own application's. 
+	Anything outside the "proxool" tag is ignored. -->
+<something-else-entirely>
+	<proxool>
+		<alias>gateway</alias>
+		<driver-url>jdbc:mysql://localhost/DataProcess</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="bavama" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<house-keeping-test-sql>select 1</house-keeping-test-sql>
+	</proxool>	
+	<proxool>
+		<alias>SportVote</alias>
+		<driver-url>jdbc:sqlserver://115.146.122.173:1433;DatabaseName=SportVote</driver-url>
+		<driver-class>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver-class>
+		<driver-properties>
+			<property name="user" value="linhnc" />
+			<property name="password" value="123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<house-keeping-test-sql>select 1</house-keeping-test-sql>
+	</proxool>
+	<proxool>
+		<alias>HBStore</alias>
+		<driver-url>jdbc:sqlserver://115.146.122.173:1433;DatabaseName=HBStore</driver-url>
+		<driver-class>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver-class>
+		<driver-properties>
+			<property name="user" value="linhnc" />
+			<property name="password" value="123456" />
+		</driver-properties>
+		<maximum-connection-count>10</maximum-connection-count>
+		<house-keeping-test-sql>select 1</house-keeping-test-sql>
+	</proxool>
+</something-else-entirely>

@@ -1,0 +1,177 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from FunRingGate WSDL service -->
+
+  <service name="FunRingGateHttpSoap12Endpoint" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://funring.neo"/>
+      <parameter name="wsdlServiceElement" value="FunRingGate"/>
+      <parameter name="schemaQualified" value="http://ToneProvide.funring.vms/xsd,http://funring.neo"/>
+      <parameter name="wsdlServicePort" value="FunRingGateHttpSoap12Endpoint"/>
+      <parameter name="className" value="neo.funring.FunRingGateSoap12BindingImpl"/>
+      <parameter name="wsdlPortType" value="FunRingGatePortType"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="presentTone" qname="operNS:PresentTone" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:PresentTone" >
+        <parameter qname="pns:myUsr" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:myPwd" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:fromUser" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:toUser" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ToneCode" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="listen" qname="operNS:Listen" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:Listen" >
+        <parameter qname="pns:myUsr" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:myPwd" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:toneCode" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="subcribe" qname="operNS:Subcribe" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:Subcribe" >
+        <parameter qname="pns:myUsr" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:myPwd" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:msisdn" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="queryToneByStatus" qname="operNS:QueryToneByStatus" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:QueryToneResp" xmlns:rtns="http://ToneProvide.funring.vms/xsd" soapAction="urn:QueryToneByStatus" >
+        <parameter qname="pns:myUsr" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:myPwd" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ToneCode" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:status" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="doCommand" qname="operNS:doCommand" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:doCommand" >
+        <parameter qname="pns:command" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:param" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="orderTone" qname="operNS:OrderTone" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:OrderTone" >
+        <parameter qname="pns:myUsr" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:myPwd" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:msisdn" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ToneCode" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getUserStatus" qname="operNS:getUserStatus" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:getUserStatus" >
+        <parameter qname="pns:myUsr" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:myPwd" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:msisdn" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="queryToneByStatus getUserStatus orderTone presentTone doCommand subcribe listen"/>
+
+      <typeMapping
+        xmlns:ns="http://ToneProvide.funring.vms/xsd"
+        qname="ns:ToneInfo"
+        type="java:vms.funring.ToneProvide.xsd.ToneInfo"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://ToneProvide.funring.vms/xsd"
+        qname="ns:QueryToneResp"
+        type="java:vms.funring.ToneProvide.xsd.QueryToneResp"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://ToneProvide.funring.vms/xsd"
+        qname="ns:BaseQueryResp"
+        type="java:vms.funring.ToneProvide.xsd.BaseQueryResp"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://ToneProvide.funring.vms/xsd"
+        qname="ns:Response"
+        type="java:vms.funring.ToneProvide.xsd.Response"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+  <service name="FunRingGateHttpSoap11Endpoint" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://funring.neo"/>
+      <parameter name="wsdlServiceElement" value="FunRingGate"/>
+      <parameter name="schemaQualified" value="http://ToneProvide.funring.vms/xsd,http://funring.neo"/>
+      <parameter name="wsdlServicePort" value="FunRingGateHttpSoap11Endpoint"/>
+      <parameter name="className" value="neo.funring.FunRingGateSoap11BindingImpl"/>
+      <parameter name="wsdlPortType" value="FunRingGatePortType"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="presentTone" qname="operNS:PresentTone" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:PresentTone" >
+        <parameter qname="pns:myUsr" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:myPwd" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:fromUser" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:toUser" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ToneCode" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="listen" qname="operNS:Listen" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:Listen" >
+        <parameter qname="pns:myUsr" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:myPwd" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:toneCode" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="subcribe" qname="operNS:Subcribe" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:Subcribe" >
+        <parameter qname="pns:myUsr" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:myPwd" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:msisdn" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="queryToneByStatus" qname="operNS:QueryToneByStatus" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:QueryToneResp" xmlns:rtns="http://ToneProvide.funring.vms/xsd" soapAction="urn:QueryToneByStatus" >
+        <parameter qname="pns:myUsr" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:myPwd" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ToneCode" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:status" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="doCommand" qname="operNS:doCommand" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:doCommand" >
+        <parameter qname="pns:command" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:param" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="orderTone" qname="operNS:OrderTone" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:OrderTone" >
+        <parameter qname="pns:myUsr" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:myPwd" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:msisdn" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ToneCode" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getUserStatus" qname="operNS:getUserStatus" xmlns:operNS="http://funring.neo" returnQName="retNS:return" xmlns:retNS="http://funring.neo" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:getUserStatus" >
+        <parameter qname="pns:myUsr" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:myPwd" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:msisdn" xmlns:pns="http://funring.neo" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="queryToneByStatus getUserStatus orderTone presentTone doCommand subcribe listen"/>
+
+      <typeMapping
+        xmlns:ns="http://ToneProvide.funring.vms/xsd"
+        qname="ns:ToneInfo"
+        type="java:vms.funring.ToneProvide.xsd.ToneInfo"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://ToneProvide.funring.vms/xsd"
+        qname="ns:QueryToneResp"
+        type="java:vms.funring.ToneProvide.xsd.QueryToneResp"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://ToneProvide.funring.vms/xsd"
+        qname="ns:BaseQueryResp"
+        type="java:vms.funring.ToneProvide.xsd.BaseQueryResp"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://ToneProvide.funring.vms/xsd"
+        qname="ns:Response"
+        type="java:vms.funring.ToneProvide.xsd.Response"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

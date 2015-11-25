@@ -1,0 +1,241 @@
+2014-06-10 08:44:51,042 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(146) ----> Reading configuration file config.properties 
+2014-06-10 08:44:53,580 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-06-10 08:44:54,897 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(162) ----> Loaded. 
+2014-06-10 08:44:54,897 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:data.dat 
+2014-06-10 08:44:54,897 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> data.dat is empty 
+2014-06-10 08:44:54,898 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: data.dat 
+2014-06-10 08:44:54,898 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:receivelog.dat 
+2014-06-10 08:44:54,899 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> receivelog.dat is empty 
+2014-06-10 08:44:54,899 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: receivelog.dat 
+2014-06-10 08:44:54,899 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(169) ----> Start: LoadMO 
+2014-06-10 08:44:54,930 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(187) ----> Start: ExecuteQueue 
+2014-06-10 08:44:54,994 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(196) ----> Start: ExecuteInsertReceiveLog 
+2014-06-10 08:44:55,129 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(425) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-06-10 08:44:55,165 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(408) ----> Listen MO............................................................... 
+2014-06-10 08:44:55,384 |  INFO | [Thread-19] | class MyProcessServer.Common:sendMT1(171) ----> SendMT-->ServiceID:6083 || MSISDN:84979967755 || Keyword:TPBD || Info:Hien he thong dang qua tai, nen khong the thuc hien duoc yeu cau cua ban, xin vui long thu lai sau. Ban se duoc hoan tien cho tien cho tin nhan da gui len. || MessageType:2 || ContentType:21 || RequestID:123 || RequestTime:2014-06-09 18:02:13.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 08:44:55,549 |  INFO | [Thread-19] | class MyProcessServer.Common:sendMT1(171) ----> SendMT-->ServiceID:6083 || MSISDN:84979967755 || Keyword:TPBD || Info:Hien he thong dang qua tai, nen khong the thuc hien duoc yeu cau cua ban, xin vui long thu lai sau. Ban se duoc hoan tien cho tien cho tin nhan da gui len. || MessageType:2 || ContentType:21 || RequestID:123 || RequestTime:2014-06-09 18:02:23.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 08:45:19,296 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 08:45:19.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Q:6083[Size:0] 
+2014-06-10 08:45:19,297 |  INFO | [Thread-7] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 08:45:19.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Keyword:TPBD 
+2014-06-10 08:45:19,299 |  INFO | [Thread-7] | class MyProcessServer.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 08:45:19.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:ClassName:MyProcess.TSTechProcess 
+2014-06-10 08:46:07,431 | ERROR | [Thread-7] | class MyProcess.TSTechProcess:getMessages(88) ----> -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Xin loi ban, hien tai the thong dang qua tai, xin vui long thu lai sau it phut. || MessageType:1 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 08:45:19.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '﻿' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2375)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2359)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Wrapper$$EnhancerByProxool$$dedcce21.executeUpdate(<generated>)
+	at MyConnection.MyExecuteData.Execute_Query(MyExecuteData.java:104)
+	at MyGateway.sms_receive_forward.Update_RetryCount(sms_receive_forward.java:256)
+	at MyProcess.TSTechProcess.getMessages(TSTechProcess.java:78)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:40)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:201)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-06-10 08:46:07,439 | DEBUG | [Thread-7] | class MyProcessServer.ContentAbstract:sendMT(236) ----> ContentAbstract_SEND_MT-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Xin loi ban, hien tai the thong dang qua tai, xin vui long thu lai sau it phut. || MessageType:1 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 08:45:19.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:SEND MT THANH CONG 
+2014-06-10 08:46:07,439 |  INFO | [Thread-17] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84904519100@TPBD 
+2014-06-10 08:46:12,563 |  INFO | [Thread-9] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 08:46:12.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Keyword:TPBD 
+2014-06-10 08:46:12,563 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 08:46:12.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Q:6083[Size:1] 
+2014-06-10 08:46:12,563 |  INFO | [Thread-9] | class MyProcessServer.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 08:46:12.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:ClassName:MyProcess.TSTechProcess 
+2014-06-10 08:49:55,752 |  INFO | [Thread-19] | class MyThread.MOForwardThread:RetryForwardMO(141) ----> Retry MO: ClassName:MyProcess.TSTechProcess || RetryCount:1 || Result:-1 || -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 08:45:19.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 08:49:55,754 |  INFO | [Thread-19] | class MyThread.MOForwardThread:RetryForwardMO(141) ----> Retry MO: ClassName:MyProcess.TSTechProcess || RetryCount:1 || Result:-1 || -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 08:46:12.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:10:17,996 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(146) ----> Reading configuration file config.properties 
+2014-06-10 09:10:21,118 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-06-10 09:10:22,543 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(162) ----> Loaded. 
+2014-06-10 09:10:22,546 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:data.dat 
+2014-06-10 09:10:22,546 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> data.dat is empty 
+2014-06-10 09:10:22,547 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: data.dat 
+2014-06-10 09:10:22,548 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:receivelog.dat 
+2014-06-10 09:10:22,548 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> receivelog.dat is empty 
+2014-06-10 09:10:22,549 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: receivelog.dat 
+2014-06-10 09:10:22,549 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(169) ----> Start: LoadMO 
+2014-06-10 09:10:22,568 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(187) ----> Start: ExecuteQueue 
+2014-06-10 09:10:22,678 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(196) ----> Start: ExecuteInsertReceiveLog 
+2014-06-10 09:10:22,759 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(425) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-06-10 09:10:22,862 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(408) ----> Listen MO............................................................... 
+2014-06-10 09:10:22,927 |  INFO | [Thread-19] | class MyProcessServer.Common:sendMT1(171) ----> SendMT-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Hien he thong dang qua tai, nen khong the thuc hien duoc yeu cau cua ban, xin vui long thu lai sau. Ban se duoc hoan tien cho tien cho tin nhan da gui len. || MessageType:2 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 08:45:19.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:10:22,941 |  INFO | [Thread-19] | class MyProcessServer.Common:sendMT1(171) ----> SendMT-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Hien he thong dang qua tai, nen khong the thuc hien duoc yeu cau cua ban, xin vui long thu lai sau. Ban se duoc hoan tien cho tien cho tin nhan da gui len. || MessageType:2 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 08:46:12.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:10:24,420 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:10:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Q:6083[Size:0] 
+2014-06-10 09:10:24,420 |  INFO | [Thread-7] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:10:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Keyword:TPBD 
+2014-06-10 09:10:24,423 |  INFO | [Thread-7] | class MyProcessServer.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:10:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:ClassName:MyProcess.TSTechProcess 
+2014-06-10 09:13:31,139 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(146) ----> Reading configuration file config.properties 
+2014-06-10 09:13:34,277 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-06-10 09:13:35,880 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(162) ----> Loaded. 
+2014-06-10 09:13:35,881 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:data.dat 
+2014-06-10 09:13:35,881 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> data.dat is empty 
+2014-06-10 09:13:35,883 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: data.dat 
+2014-06-10 09:13:35,883 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:receivelog.dat 
+2014-06-10 09:13:35,883 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> receivelog.dat is empty 
+2014-06-10 09:13:35,884 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: receivelog.dat 
+2014-06-10 09:13:35,884 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(169) ----> Start: LoadMO 
+2014-06-10 09:13:35,921 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(187) ----> Start: ExecuteQueue 
+2014-06-10 09:13:36,012 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(196) ----> Start: ExecuteInsertReceiveLog 
+2014-06-10 09:13:36,045 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(425) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-06-10 09:13:36,187 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(408) ----> Listen MO............................................................... 
+2014-06-10 09:13:36,252 |  INFO | [Thread-19] | class MyThread.MOForwardThread:RetryForwardMO(141) ----> Retry MO: ClassName:MyProcess.TSTechProcess || RetryCount:1 || Result:-1 || -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:10:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:13:41,139 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:13:41.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Q:6083[Size:0] 
+2014-06-10 09:13:41,139 |  INFO | [Thread-7] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:13:41.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Keyword:TPBD 
+2014-06-10 09:13:41,145 |  INFO | [Thread-7] | class MyProcessServer.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:13:41.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:ClassName:MyProcess.TSTechProcess 
+2014-06-10 09:18:29,875 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(146) ----> Reading configuration file config.properties 
+2014-06-10 09:18:31,720 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-06-10 09:18:32,973 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(162) ----> Loaded. 
+2014-06-10 09:18:32,973 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:data.dat 
+2014-06-10 09:18:32,974 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> data.dat is empty 
+2014-06-10 09:18:32,975 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: data.dat 
+2014-06-10 09:18:32,975 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:receivelog.dat 
+2014-06-10 09:18:32,975 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> receivelog.dat is empty 
+2014-06-10 09:18:32,975 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: receivelog.dat 
+2014-06-10 09:18:32,975 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(169) ----> Start: LoadMO 
+2014-06-10 09:18:32,988 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(187) ----> Start: ExecuteQueue 
+2014-06-10 09:18:33,067 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(196) ----> Start: ExecuteInsertReceiveLog 
+2014-06-10 09:18:33,089 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(425) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-06-10 09:18:33,135 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(408) ----> Listen MO............................................................... 
+2014-06-10 09:18:33,157 |  INFO | [Thread-19] | class MyProcessServer.Common:sendMT1(171) ----> SendMT-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Hien he thong dang qua tai, nen khong the thuc hien duoc yeu cau cua ban, xin vui long thu lai sau. Ban se duoc hoan tien cho tien cho tin nhan da gui len. || MessageType:2 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 09:10:24.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:18:33,168 |  INFO | [Thread-19] | class MyThread.MOForwardThread:RetryForwardMO(141) ----> Retry MO: ClassName:MyProcess.TSTechProcess || RetryCount:1 || Result:-1 || -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:13:41.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:20:21,650 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:20:21.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Q:6083[Size:1] 
+2014-06-10 09:20:21,652 |  INFO | [Thread-8] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:20:21.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Keyword:TPBD 
+2014-06-10 09:20:21,652 |  INFO | [Thread-8] | class MyProcessServer.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:20:21.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:ClassName:MyProcess.TSTechProcess 
+2014-06-10 09:20:33,539 | ERROR | [Thread-8] | class MyProcess.TSTechProcess:getMessages(88) ----> -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Xin loi ban, hien tai the thong dang qua tai, xin vui long thu lai sau it phut. || MessageType:1 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 09:20:21.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '﻿' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2375)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2359)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Wrapper$$EnhancerByProxool$$33c79404.executeUpdate(<generated>)
+	at MyConnection.MyExecuteData.Execute_Query(MyExecuteData.java:104)
+	at MyGateway.sms_receive_forward.Update_RetryCount(sms_receive_forward.java:254)
+	at MyProcess.TSTechProcess.getMessages(TSTechProcess.java:78)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:40)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:201)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-06-10 09:20:33,553 | DEBUG | [Thread-8] | class MyProcessServer.ContentAbstract:sendMT(236) ----> ContentAbstract_SEND_MT-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Xin loi ban, hien tai the thong dang qua tai, xin vui long thu lai sau it phut. || MessageType:1 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 09:20:21.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:SEND MT THANH CONG 
+2014-06-10 09:20:33,555 |  INFO | [Thread-17] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84904519100@TPBD 
+2014-06-10 09:20:41,269 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(146) ----> Reading configuration file config.properties 
+2014-06-10 09:20:43,048 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-06-10 09:20:44,274 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(162) ----> Loaded. 
+2014-06-10 09:20:44,274 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:data.dat 
+2014-06-10 09:20:44,275 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> data.dat is empty 
+2014-06-10 09:20:44,275 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: data.dat 
+2014-06-10 09:20:44,275 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:receivelog.dat 
+2014-06-10 09:20:44,276 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> receivelog.dat is empty 
+2014-06-10 09:20:44,276 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: receivelog.dat 
+2014-06-10 09:20:44,277 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(169) ----> Start: LoadMO 
+2014-06-10 09:20:44,312 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(187) ----> Start: ExecuteQueue 
+2014-06-10 09:20:44,386 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(196) ----> Start: ExecuteInsertReceiveLog 
+2014-06-10 09:20:44,404 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(425) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-06-10 09:20:44,495 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(408) ----> Listen MO............................................................... 
+2014-06-10 09:20:44,537 |  INFO | [Thread-19] | class MyProcessServer.Common:sendMT1(171) ----> SendMT-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Hien he thong dang qua tai, nen khong the thuc hien duoc yeu cau cua ban, xin vui long thu lai sau. Ban se duoc hoan tien cho tien cho tin nhan da gui len. || MessageType:2 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 09:13:41.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:20:44,556 |  INFO | [Thread-19] | class MyThread.MOForwardThread:RetryForwardMO(141) ----> Retry MO: ClassName:MyProcess.TSTechProcess || RetryCount:1 || Result:-1 || -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:20:21.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:20:45,741 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:20:45.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Q:6083[Size:1] 
+2014-06-10 09:20:45,831 |  INFO | [Thread-7] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:20:45.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Keyword:TPBD 
+2014-06-10 09:20:45,832 |  INFO | [Thread-7] | class MyProcessServer.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:20:45.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:ClassName:MyProcess.TSTechProcess 
+2014-06-10 09:21:39,902 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(146) ----> Reading configuration file config.properties 
+2014-06-10 09:21:41,531 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-06-10 09:21:42,539 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(162) ----> Loaded. 
+2014-06-10 09:21:42,539 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:data.dat 
+2014-06-10 09:21:42,539 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> data.dat is empty 
+2014-06-10 09:21:42,540 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: data.dat 
+2014-06-10 09:21:42,540 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:receivelog.dat 
+2014-06-10 09:21:42,550 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> receivelog.dat is empty 
+2014-06-10 09:21:42,550 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: receivelog.dat 
+2014-06-10 09:21:42,551 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(169) ----> Start: LoadMO 
+2014-06-10 09:21:42,562 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(187) ----> Start: ExecuteQueue 
+2014-06-10 09:21:42,611 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(196) ----> Start: ExecuteInsertReceiveLog 
+2014-06-10 09:21:42,622 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(425) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-06-10 09:21:42,631 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(408) ----> Listen MO............................................................... 
+2014-06-10 09:21:42,653 |  INFO | [Thread-19] | class MyThread.MOForwardThread:RetryForwardMO(141) ----> Retry MO: ClassName:MyProcess.TSTechProcess || RetryCount:1 || Result:-1 || -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:20:21.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:21:42,655 |  INFO | [Thread-19] | class MyThread.MOForwardThread:RetryForwardMO(141) ----> Retry MO: ClassName:MyProcess.TSTechProcess || RetryCount:1 || Result:-1 || -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:20:45.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:21:56,280 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:21:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Q:6083[Size:0] 
+2014-06-10 09:21:56,280 |  INFO | [Thread-7] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:21:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Keyword:TPBD 
+2014-06-10 09:21:56,281 |  INFO | [Thread-7] | class MyProcessServer.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:21:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:ClassName:MyProcess.TSTechProcess 
+2014-06-10 09:21:56,394 | ERROR | [Thread-7] | class MyProcess.TSTechProcess:getMessages(88) ----> -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Xin loi ban, hien tai the thong dang qua tai, xin vui long thu lai sau it phut. || MessageType:1 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 09:21:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '﻿' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2375)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2359)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.logicalcobwebs.proxool.ProxyStatement.invoke(ProxyStatement.java:100)
+	at org.logicalcobwebs.proxool.ProxyStatement.intercept(ProxyStatement.java:57)
+	at $java.sql.Statement$$EnhancerByProxool$$f51fbe6f.executeUpdate(<generated>)
+	at MyConnection.MyExecuteData.Execute_Query(MyExecuteData.java:104)
+	at MyGateway.sms_receive_forward.Update_RetryCount(sms_receive_forward.java:254)
+	at MyProcess.TSTechProcess.getMessages(TSTechProcess.java:78)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:40)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:201)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:106)
+2014-06-10 09:21:56,409 | DEBUG | [Thread-7] | class MyProcessServer.ContentAbstract:sendMT(236) ----> ContentAbstract_SEND_MT-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Xin loi ban, hien tai the thong dang qua tai, xin vui long thu lai sau it phut. || MessageType:1 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 09:21:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:SEND MT THANH CONG 
+2014-06-10 09:21:56,410 |  INFO | [Thread-17] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84904519100@TPBD 
+2014-06-10 09:22:17,674 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(146) ----> Reading configuration file config.properties 
+2014-06-10 09:22:19,361 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2014-06-10 09:22:20,465 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(162) ----> Loaded. 
+2014-06-10 09:22:20,465 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:data.dat 
+2014-06-10 09:22:20,465 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> data.dat is empty 
+2014-06-10 09:22:20,467 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: data.dat 
+2014-06-10 09:22:20,467 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> loadSMSDataTable:receivelog.dat 
+2014-06-10 09:22:20,484 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(286) ----> receivelog.dat is empty 
+2014-06-10 09:22:20,485 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(329) ----> Deleting.....: receivelog.dat 
+2014-06-10 09:22:20,485 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(169) ----> Start: LoadMO 
+2014-06-10 09:22:20,515 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(187) ----> Start: ExecuteQueue 
+2014-06-10 09:22:20,608 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(196) ----> Start: ExecuteInsertReceiveLog 
+2014-06-10 09:22:20,633 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(425) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2014-06-10 09:22:20,674 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(408) ----> Listen MO............................................................... 
+2014-06-10 09:22:20,705 |  INFO | [Thread-19] | class MyThread.MOForwardThread:RetryForwardMO(141) ----> Retry MO: ClassName:MyProcess.TSTechProcess || RetryCount:1 || Result:-1 || -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:20:21.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:22:20,706 |  INFO | [Thread-19] | class MyThread.MOForwardThread:RetryForwardMO(141) ----> Retry MO: ClassName:MyProcess.TSTechProcess || RetryCount:1 || Result:-1 || -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:20:45.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:22:20,708 |  INFO | [Thread-19] | class MyThread.MOForwardThread:RetryForwardMO(141) ----> Retry MO: ClassName:MyProcess.TSTechProcess || RetryCount:1 || Result:-1 || -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:21:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:22:23,851 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(125) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:22:23.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Q:6083[Size:1] 
+2014-06-10 09:22:23,854 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:22:23.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:Keyword:TPBD 
+2014-06-10 09:22:23,855 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:processQueueMsg(181) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:22:23.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note:ClassName:MyProcess.TSTechProcess 
+2014-06-10 09:27:20,716 |  INFO | [Thread-19] | class MyProcessServer.Common:sendMT1(171) ----> SendMT-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Hien he thong dang qua tai, nen khong the thuc hien duoc yeu cau cua ban, xin vui long thu lai sau. Ban se duoc hoan tien cho tien cho tin nhan da gui len. || MessageType:2 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 09:20:21.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:27:20,727 |  INFO | [Thread-19] | class MyProcessServer.Common:sendMT1(171) ----> SendMT-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Hien he thong dang qua tai, nen khong the thuc hien duoc yeu cau cua ban, xin vui long thu lai sau. Ban se duoc hoan tien cho tien cho tin nhan da gui len. || MessageType:2 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 09:20:45.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:27:20,733 |  INFO | [Thread-19] | class MyProcessServer.Common:sendMT1(171) ----> SendMT-->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:Hien he thong dang qua tai, nen khong the thuc hien duoc yeu cau cua ban, xin vui long thu lai sau. Ban se duoc hoan tien cho tien cho tin nhan da gui len. || MessageType:2 || ContentType:21 || RequestID:123 || RequestTime:2014-06-10 09:21:56.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 
+2014-06-10 09:27:20,740 |  INFO | [Thread-19] | class MyThread.MOForwardThread:RetryForwardMO(141) ----> Retry MO: ClassName:MyProcess.TSTechProcess || RetryCount:1 || Result:-1 || -->ServiceID:6083 || MSISDN:84904519100 || Keyword:TPBD || Info:TPBD || MessageType:0 || ContentType:0 || RequestID:123 || RequestTime:2014-06-10 09:22:23.0 || ChannelType:1 || TenDV: || MaDV: || MO:TPBD ||  Note: 

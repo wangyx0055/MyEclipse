@@ -1,0 +1,85 @@
+<HTML><HEAD><TITLE>jFTP, Tutorial II</TITLE></HEAD>
+<BODY LINK="#000080" VLINK="#000080" TEXT="BLACK" BGCOLOR="WHITE">
+
+<I>j</I><FONT SIZE=+2 COLOR="#000080"><I>FTP, Tutorial II</I></FONT><BR><BR>
+
+<A HREF=tutorial.html>Chapter I: Hello FTP</A><BR>
+<FONT COLOR="#000080">Chapter II: FTP files</FONT><BR>
+&nbsp;&nbsp; <A HREF=#COPY>Copying file</A><BR>
+&nbsp;&nbsp; <A HREF=#STREAM>Reading and writing a file</A><BR><BR>
+
+This chapter shows how to read and write remote files.<BR><BR>
+
+<B>Very important note!</B> One open ftp connection can handle only one data transfer at given time!
+This means that if you plan to open multiple files at time you have to open multiple connections one for each file you want to read or write simultaneously.
+(There are specialized FtpInput/OutputStream one step constructors supplied to overcome this pain.)<BR><BR>
+
+Anyway, you always need to consider this fact. 
+Never open concurrent data transfers on same ftp instance.<BR><BR>
+
+Only corresponding pieces of code are shown, 
+assuming that connect was already done before.<BR><BR><BR>
+
+
+<FONT SIZE=+1 COLOR="#000080"><A NAME=COPY>Copying file</A></FONT><BR><BR>
+
+Static method <B>CoLoad.copy</B> can be used to download file.
+Simply switching parameter order carries out upload.<BR><BR>
+
+<CODE>
+&nbsp;&nbsp; <FONT COLOR=green>/* source FtpFile remote file */</FONT><BR>
+&nbsp;&nbsp; CoFile file = <FONT COLOR=blue>new</FONT> FtpFile<FONT COLOR=red>(</FONT>"/Welcome",cl<FONT COLOR=red>);</FONT><BR>
+<BR>
+&nbsp;&nbsp; <FONT COLOR=green>/* destination LocalFile home-dir/Welcome */</FONT><BR>
+&nbsp;&nbsp; CoFile to = <FONT COLOR=blue>new</FONT> LocalFile<FONT COLOR=red>(</FONT>System.getProperty<FONT COLOR=red>(</FONT>"user.dir"<FONT COLOR=red>)</FONT>,file.getName<FONT COLOR=red>());</FONT><BR>
+<BR>
+&nbsp;&nbsp; <FONT COLOR=green>/* download /Welcome file to home-dir/Welcome */</FONT><BR>
+&nbsp;&nbsp; CoLoad.copy<FONT COLOR=red>(</FONT>to,file<FONT COLOR=red>);</FONT><BR>
+</CODE><BR>
+
+Multiple files or directories can be copied by CoLoad.copy 
+using array of CoFile[] objects as a source parameter.
+Of course destination parameter must denote a directory in this case.<BR><BR>
+
+<B>Note:</B> If array of CoFile[] objects contains CoFile object 
+which denotes a directory, its contents will be copied recursively.<BR><BR>
+
+Also a <B>CoLoad.delete</B> method is supplied for deleting files recursively.<BR><BR>
+
+Download this example <A HREF=../tests/FtpLoadTest.java>FtpLoadTest</A>.<BR><BR><BR>
+
+
+<FONT SIZE=+1 COLOR="#000080"><A NAME=STREAM>Reading and writing a file</A></FONT><BR><BR>
+
+Following piece of code shows how to use <B>FtpInputStream</B> to read contents of a remote file.
+Using <B>FtpOutputStream</B> writing to a remote file can be carried in very similar way.<BR><BR>
+
+Remember that you always need to use BufferedReader / BufferedWriter for achieving good performance. Respectively use BufferedInputStream / BufferedOutputStream for reading or writing binary files.<BR><BR>
+
+Similarly, you can use <B>FtpListInputStream</B> to read contents of directory in text format.<BR><BR>
+
+<CODE>
+&nbsp;&nbsp; FtpInputStream is = <FONT COLOR=blue><FONT COLOR=blue>null</FONT></FONT><FONT COLOR=red>;</FONT><BR>
+
+&nbsp;&nbsp; <FONT COLOR=green>/* source FtpFile remote file */</FONT><BR>
+&nbsp;&nbsp; FtpFile file = <FONT COLOR=blue>new</FONT> FtpFile<FONT COLOR=red>(</FONT>"/Welcome",cl<FONT COLOR=red>);</FONT><BR><BR>
+
+&nbsp;&nbsp; <FONT COLOR=green>/* open ftp input stream */</FONT><BR>
+&nbsp;&nbsp; is = <FONT COLOR=blue>new</FONT> <B>FtpInputStream</B><FONT COLOR=red>(</FONT>file<FONT COLOR=red>);</FONT><BR>
+&nbsp;&nbsp; BufferedReader br = <FONT COLOR=blue>new</FONT> BufferedReader<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT COLOR=red>(</FONT><FONT COLOR=blue>new</FONT> InputStreamReader<FONT COLOR=red>(</FONT>is<FONT COLOR=red>)</FONT><FONT COLOR=red>);</FONT><BR><BR>
+
+&nbsp;&nbsp; <FONT COLOR=green>/* read ftp input stream */</FONT><BR>
+&nbsp;&nbsp; while <FONT COLOR=red>(</FONT><FONT COLOR=red>(</FONT>line = br.<B>readLine</B><FONT COLOR=red>(</FONT><FONT COLOR=red>)</FONT><FONT COLOR=red>)</FONT> != <FONT COLOR=blue><FONT COLOR=blue>null</FONT></FONT><FONT COLOR=red>)</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println<FONT COLOR=red>(</FONT>line<FONT COLOR=red>);</FONT><BR>
+<BR>
+&nbsp;&nbsp; <FONT COLOR=green>/* close reader */</FONT><BR>
+&nbsp;&nbsp; br.close<FONT COLOR=red>(</FONT><FONT COLOR=red>);</FONT><BR>
+</CODE><BR>
+
+<B>Important note!</B> Both Ftp.close and FtpInputStream.close methods must be called.<BR><BR>
+
+Download this example <A HREF=../tests/FtpStreamTest.java>FtpStreamTest</A>.<BR><BR><BR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,455 @@
+2013-06-27 10:47:43,824 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(144) ----> Reading configuration file config.properties 
+2013-06-27 10:47:53,792 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(116) ----> LoadConfig - Start 
+2013-06-27 10:47:54,877 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(151) ----> Loaded. 
+2013-06-27 10:47:54,878 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(266) ----> loadSMSDataTable:data.dat 
+2013-06-27 10:47:54,879 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(275) ----> data.dat is empty 
+2013-06-27 10:47:54,879 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(318) ----> Deleting.....: data.dat 
+2013-06-27 10:47:54,880 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(266) ----> loadSMSDataTable:receivelog.dat 
+2013-06-27 10:47:54,880 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(275) ----> receivelog.dat is empty 
+2013-06-27 10:47:54,881 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(318) ----> Deleting.....: receivelog.dat 
+2013-06-27 10:47:54,881 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(158) ----> Start: LoadMO 
+2013-06-27 10:47:54,925 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(176) ----> Start: ExecuteQueue 
+2013-06-27 10:47:55,031 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(185) ----> Start: ExecuteInsertReceiveLog 
+2013-06-27 10:47:55,046 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(414) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2013-06-27 10:47:55,068 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(397) ----> Listen MO............................................................... 
+2013-06-27 10:47:55,226 |  INFO | [Thread-21] | class MyProcessServer.Common:sendMT1(171) ----> SendMT-->ServiceID:6283 || MSISDN:84979967755 || Keyword:GA AL || Info:Hien he thong dang qua tai, nen khong the thuc hien duoc yeu cau cua ban, xin vui long thu lai sau. Ban se duoc hoan tien cho tien cho tin nhan da gui len. || MessageType:2 || ContentType:21 || RequestID:2105130932000351001 || RequestTime:2013-05-13 09:32:00.0 || ChannelType:1 || TenDV: || MaDV: || MO:GA AL8 ||  Note: 
+2013-06-27 10:47:55,313 |  INFO | [Thread-21] | class MyProcessServer.Common:sendMT1(171) ----> SendMT-->ServiceID:6283 || MSISDN:84979967755 || Keyword:GA AL || Info:Hien he thong dang qua tai, nen khong the thuc hien duoc yeu cau cua ban, xin vui long thu lai sau. Ban se duoc hoan tien cho tien cho tin nhan da gui len. || MessageType:2 || ContentType:21 || RequestID:2105130940111911001 || RequestTime:2013-05-13 09:40:11.0 || ChannelType:1 || TenDV: || MaDV: || MO:GA AL8 ||  Note: 
+2013-06-27 10:48:55,579 |  INFO | [Thread-7] | class MyProcessServer.LoadMO:run(121) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:84913730702 || Keyword:NS Anh || Info:NS Anh || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 10:48:55.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS Anh ||  Note:Q:6083[Size:1] 
+2013-06-27 10:48:55,582 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:84913730702 || Keyword:NS Anh || Info:NS Anh || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 10:48:55.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS Anh ||  Note:Keyword:NS 
+2013-06-27 10:48:55,583 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:processQueueMsg(182) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:84913730702 || Keyword:NS || Info:NS Anh || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 10:48:55.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS Anh ||  Note:ClassName:MyProcess.RingbackProcess 
+2013-06-27 10:48:55,931 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(71) ----> Java version: 1.6.0_13 
+2013-06-27 10:48:55,931 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(72) ----> Java vendor: Sun Microsystems Inc. 
+2013-06-27 10:48:55,932 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(73) ----> Java class path: D:\MyEclipse\ProcessNew\bin;C:\Users\Administrator\AppData\Local\MyEclipse\Common\plugins\com.genuitec.eclipse.ws.xfire_9.0.0.me201109130910\lib\webservices-api.jar;C:\Users\Administrator\AppData\Local\MyEclipse\Common\plugins\com.genuitec.eclipse.ws.xfire_9.0.0.me201109130910\lib\webservices-extra-api.jar;D:\MyEclipse\JavaLib\log4j-1.2.17.jar;D:\MyEclipse\MyUtility\bin;D:\MyEclipse\MyDataProcess\bin;D:\MyEclipse\MyConnection\bin;D:\MyEclipse\JavaLib\Proxool\commons-logging-1.1.1.jar;D:\MyEclipse\JavaLib\Proxool\proxool-0.9.1.jar;D:\MyEclipse\JavaLib\Proxool\proxool-cglib.jar;D:\MyEclipse\JavaLib\mysql-connector-java-5.1.22-bin.jar;D:\MyEclipse\JavaLib\SQl\sqljdbc_2.0\enu\sqljdbc4.jar;D:\MyEclipse\MyDataSportVote\bin;D:\MyEclipse\MyDataHBStore\bin;D:\MyEclipse\JavaLib\commons-codec-1.3.jar;D:\MyEclipse\JavaLib\commons-discovery-0.2.jar;D:\MyEclipse\JavaLib\commons-httpclient-3.0.jar;D:\MyEclipse\JavaLib\commons-logging-1.0.4.jar 
+2013-06-27 10:48:55,932 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(74) ----> Operating system name: Windows Vista 
+2013-06-27 10:48:55,932 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(75) ----> Operating system architecture: amd64 
+2013-06-27 10:48:55,933 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(76) ----> Operating system version: 6.1 
+2013-06-27 10:48:55,933 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration) 
+2013-06-27 10:48:55,934 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunRsaSign 1.5: Sun RSA signature provider 
+2013-06-27 10:48:55,934 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1) 
+2013-06-27 10:48:55,934 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC) 
+2013-06-27 10:48:55,934 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJGSS 1.0: Sun (Kerberos v5, SPNEGO) 
+2013-06-27 10:48:55,935 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5) 
+2013-06-27 10:48:55,935 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory) 
+2013-06-27 10:48:55,935 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunPCSC 1.6: Sun PC/SC provider 
+2013-06-27 10:48:55,939 | DEBUG | [Thread-10] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.useragent = Jakarta Commons-HttpClient/3.0 
+2013-06-27 10:48:55,941 | DEBUG | [Thread-10] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.version = HTTP/1.1 
+2013-06-27 10:48:55,943 | DEBUG | [Thread-10] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager 
+2013-06-27 10:48:55,943 | DEBUG | [Thread-10] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.cookie-policy = rfc2109 
+2013-06-27 10:48:55,943 | DEBUG | [Thread-10] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.element-charset = US-ASCII 
+2013-06-27 10:48:55,944 | DEBUG | [Thread-10] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.content-charset = ISO-8859-1 
+2013-06-27 10:48:55,946 | DEBUG | [Thread-10] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@5c76653 
+2013-06-27 10:48:55,946 | DEBUG | [Thread-10] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z] 
+2013-06-27 10:48:56,017 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(277) ----> Authenticating with BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 10:48:56,018 |  WARN | [Thread-10] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(287) ----> Required credentials not available for BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 10:48:56,019 |  WARN | [Thread-10] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(289) ----> Preemptive authentication requested but no default credentials available 
+2013-06-27 10:48:56,019 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpConnection:open(691) ----> Open connection to 115.146.122.173:8092 
+2013-06-27 10:48:56,024 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "POST /SetRingBack.asmx HTTP/1.1[\r][\n]" 
+2013-06-27 10:48:56,024 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpMethodBase:addHostRequestHeader(1235) ----> Adding Host request header 
+2013-06-27 10:48:56,037 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpMethodBase:getContentCharSet(2201) ----> Default charset used: ISO-8859-1 
+2013-06-27 10:48:56,039 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "Content-Type: text/xml[\r][\n]" 
+2013-06-27 10:48:56,040 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "SOAPAction: http://tempuri.org/SetRingback[\r][\n]" 
+2013-06-27 10:48:56,040 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "User-Agent: Jakarta Commons-HttpClient/3.0[\r][\n]" 
+2013-06-27 10:48:56,040 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "Host: 115.146.122.173:8092[\r][\n]" 
+2013-06-27 10:48:56,043 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "Content-Length: 533[\r][\n]" 
+2013-06-27 10:48:56,044 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "[\r][\n]" 
+2013-06-27 10:48:56,044 | DEBUG | [Thread-10] | httpclient.wire.content:wire(83) ----> >> "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><SetRingback xmlns="http://tempuri.org/"><Partner_UserName>HB6x83</Partner_UserName><Partner_Password>HB6x83DFF3424</Partner_Password><Command>Settone</Command><MSISDN>84913730702</MSISDN><ValidCode></ValidCode><RingBackCode>904382</RingBackCode><RequestTime></RequestTime></SetRingback></soap:Body></soap:Envelope>" 
+2013-06-27 10:48:56,051 | DEBUG | [Thread-10] | org.apache.commons.httpclient.methods.EntityEnclosingMethod:writeRequestBody(504) ----> Request body sent 
+2013-06-27 10:49:04,851 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "HTTP/1.1 200 OK[\r][\n]" 
+2013-06-27 10:49:04,854 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "Date: Thu, 27 Jun 2013 03:49:07 GMT[\r][\n]" 
+2013-06-27 10:49:04,855 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "Server: Microsoft-IIS/6.0[\r][\n]" 
+2013-06-27 10:49:04,855 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "X-Powered-By: ASP.NET[\r][\n]" 
+2013-06-27 10:49:04,855 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "X-AspNet-Version: 2.0.50727[\r][\n]" 
+2013-06-27 10:49:04,855 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "Cache-Control: private, max-age=0[\r][\n]" 
+2013-06-27 10:49:04,856 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "Content-Type: text/xml; charset=utf-8[\r][\n]" 
+2013-06-27 10:49:04,856 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "Content-Length: 357[\r][\n]" 
+2013-06-27 10:49:04,859 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpMethodBase:getResponseBody(679) ----> Buffering response body 
+2013-06-27 10:49:04,859 | DEBUG | [Thread-10] | httpclient.wire.content:wire(83) ----> << "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><SetRingbackResponse xmlns="http://tempuri.org/"><SetRingbackResult>0</SetRingbackResult></SetRingbackResponse></soap:Body></soap:Envelope>" 
+2013-06-27 10:49:04,861 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(921) ----> Resorting to protocol version default close connection policy 
+2013-06-27 10:49:04,861 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(925) ----> Should NOT close connection, using HTTP/1.1 
+2013-06-27 10:49:04,861 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpConnection:releaseConnection(1177) ----> Releasing connection back to connection manager. 
+2013-06-27 10:49:04,880 | DEBUG | [Thread-10] | MyCallWebservice.SetRingback:CallWebservice(111) ----> Call_WS_SetRingback------->MSISDN:84913730702 || Command:Settone || RingbackCode:904382 || RequestTime: || Result:0 
+2013-06-27 10:49:04,881 |  INFO | [Thread-10] | class MyProcess.RingbackProcess:getMessages(119) ----> NhacCho-->UserID:84913730702|| MT:Chuc mung ban da mua thanh cong bai hat [Anh] [904382]  co gia 2000 VND. Bai hat nay se duoc cai dat mac dinh cho nhac cho cua ban. 
+2013-06-27 10:49:04,884 | DEBUG | [Thread-10] | class MyProcessServer.ContentAbstract:sendMT(227) ----> ContentAbstract_SEND_MT-->ServiceID:6083 || MSISDN:84913730702 || Keyword:NS || Info:Chuc mung ban da mua thanh cong bai hat [Anh] [904382]  co gia 2000 VND. Bai hat nay se duoc cai dat mac dinh cho nhac cho cua ban. || MessageType:1 || ContentType:21 || RequestID:1234567890 || RequestTime:2013-06-27 10:48:55.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS Anh ||  Note:SEND MT THANH CONG 
+2013-06-27 10:49:04,884 |  INFO | [Thread-19] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:84913730702@NS Anh 
+2013-06-27 10:58:21,855 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(144) ----> Reading configuration file config.properties 
+2013-06-27 10:58:23,541 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(116) ----> LoadConfig - Start 
+2013-06-27 10:58:24,600 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(151) ----> Loaded. 
+2013-06-27 10:58:24,600 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(266) ----> loadSMSDataTable:data.dat 
+2013-06-27 10:58:24,600 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(275) ----> data.dat is empty 
+2013-06-27 10:58:24,601 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(318) ----> Deleting.....: data.dat 
+2013-06-27 10:58:24,601 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(266) ----> loadSMSDataTable:receivelog.dat 
+2013-06-27 10:58:24,602 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(275) ----> receivelog.dat is empty 
+2013-06-27 10:58:24,602 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(318) ----> Deleting.....: receivelog.dat 
+2013-06-27 10:58:24,602 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(158) ----> Start: LoadMO 
+2013-06-27 10:58:24,641 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(176) ----> Start: ExecuteQueue 
+2013-06-27 10:58:24,656 |  INFO | [Thread-8] | class MyProcessServer.LoadMO:run(121) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 10:58:03.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Q:6083[Size:1] 
+2013-06-27 10:58:24,742 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(185) ----> Start: ExecuteInsertReceiveLog 
+2013-06-27 10:58:24,756 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(414) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2013-06-27 10:58:24,775 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(397) ----> Listen MO............................................................... 
+2013-06-27 10:58:26,170 |  INFO | [Thread-9] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 10:58:03.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Keyword:NS 
+2013-06-27 10:58:26,173 |  INFO | [Thread-9] | class MyProcessServer.ExecuteQueue:processQueueMsg(182) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 10:58:03.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:ClassName:MyProcess.RingbackProcess 
+2013-06-27 10:58:26,324 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(71) ----> Java version: 1.6.0_13 
+2013-06-27 10:58:26,325 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(72) ----> Java vendor: Sun Microsystems Inc. 
+2013-06-27 10:58:26,325 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(73) ----> Java class path: D:\MyEclipse\ProcessNew\bin;C:\Users\Administrator\AppData\Local\MyEclipse\Common\plugins\com.genuitec.eclipse.ws.xfire_9.0.0.me201109130910\lib\webservices-api.jar;C:\Users\Administrator\AppData\Local\MyEclipse\Common\plugins\com.genuitec.eclipse.ws.xfire_9.0.0.me201109130910\lib\webservices-extra-api.jar;D:\MyEclipse\JavaLib\log4j-1.2.17.jar;D:\MyEclipse\MyUtility\bin;D:\MyEclipse\MyDataProcess\bin;D:\MyEclipse\MyConnection\bin;D:\MyEclipse\JavaLib\Proxool\commons-logging-1.1.1.jar;D:\MyEclipse\JavaLib\Proxool\proxool-0.9.1.jar;D:\MyEclipse\JavaLib\Proxool\proxool-cglib.jar;D:\MyEclipse\JavaLib\mysql-connector-java-5.1.22-bin.jar;D:\MyEclipse\JavaLib\SQl\sqljdbc_2.0\enu\sqljdbc4.jar;D:\MyEclipse\MyDataSportVote\bin;D:\MyEclipse\MyDataHBStore\bin;D:\MyEclipse\JavaLib\commons-codec-1.3.jar;D:\MyEclipse\JavaLib\commons-discovery-0.2.jar;D:\MyEclipse\JavaLib\commons-httpclient-3.0.jar;D:\MyEclipse\JavaLib\commons-logging-1.0.4.jar 
+2013-06-27 10:58:26,325 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(74) ----> Operating system name: Windows Vista 
+2013-06-27 10:58:26,325 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(75) ----> Operating system architecture: amd64 
+2013-06-27 10:58:26,326 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(76) ----> Operating system version: 6.1 
+2013-06-27 10:58:26,326 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration) 
+2013-06-27 10:58:26,327 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunRsaSign 1.5: Sun RSA signature provider 
+2013-06-27 10:58:26,327 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1) 
+2013-06-27 10:58:26,327 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC) 
+2013-06-27 10:58:26,327 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJGSS 1.0: Sun (Kerberos v5, SPNEGO) 
+2013-06-27 10:58:26,327 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5) 
+2013-06-27 10:58:26,328 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory) 
+2013-06-27 10:58:26,328 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunPCSC 1.6: Sun PC/SC provider 
+2013-06-27 10:58:26,331 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.useragent = Jakarta Commons-HttpClient/3.0 
+2013-06-27 10:58:26,334 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.version = HTTP/1.1 
+2013-06-27 10:58:26,335 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager 
+2013-06-27 10:58:26,336 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.cookie-policy = rfc2109 
+2013-06-27 10:58:26,336 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.element-charset = US-ASCII 
+2013-06-27 10:58:26,336 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.content-charset = ISO-8859-1 
+2013-06-27 10:58:26,338 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@6bef4b2b 
+2013-06-27 10:58:26,339 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z] 
+2013-06-27 10:58:26,414 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(277) ----> Authenticating with BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 10:58:26,415 |  WARN | [Thread-9] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(287) ----> Required credentials not available for BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 10:58:26,415 |  WARN | [Thread-9] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(289) ----> Preemptive authentication requested but no default credentials available 
+2013-06-27 10:58:26,416 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpConnection:open(691) ----> Open connection to 115.146.122.173:8092 
+2013-06-27 10:58:26,422 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "POST /SetRingBack.asmx HTTP/1.1[\r][\n]" 
+2013-06-27 10:58:26,423 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:addHostRequestHeader(1235) ----> Adding Host request header 
+2013-06-27 10:58:26,438 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:getContentCharSet(2201) ----> Default charset used: ISO-8859-1 
+2013-06-27 10:58:26,440 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "Content-Type: text/xml[\r][\n]" 
+2013-06-27 10:58:26,441 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "SOAPAction: http://tempuri.org/SetRingback[\r][\n]" 
+2013-06-27 10:58:26,441 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "User-Agent: Jakarta Commons-HttpClient/3.0[\r][\n]" 
+2013-06-27 10:58:26,441 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "Host: 115.146.122.173:8092[\r][\n]" 
+2013-06-27 10:58:26,442 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "Content-Length: 532[\r][\n]" 
+2013-06-27 10:58:26,443 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "[\r][\n]" 
+2013-06-27 10:58:26,444 | DEBUG | [Thread-9] | httpclient.wire.content:wire(83) ----> >> "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><SetRingback xmlns="http://tempuri.org/"><Partner_UserName>HB6x83</Partner_UserName><Partner_Password>HB6x83DFF3424</Partner_Password><Command>Search</Command><MSISDN>841257034555</MSISDN><ValidCode>hello</ValidCode><RingBackCode></RingBackCode><RequestTime></RequestTime></SetRingback></soap:Body></soap:Envelope>" 
+2013-06-27 10:58:26,445 | DEBUG | [Thread-9] | org.apache.commons.httpclient.methods.EntityEnclosingMethod:writeRequestBody(504) ----> Request body sent 
+2013-06-27 10:58:27,674 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "HTTP/1.1 200 OK[\r][\n]" 
+2013-06-27 10:58:27,677 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Date: Thu, 27 Jun 2013 03:58:29 GMT[\r][\n]" 
+2013-06-27 10:58:27,678 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Server: Microsoft-IIS/6.0[\r][\n]" 
+2013-06-27 10:58:27,678 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "X-Powered-By: ASP.NET[\r][\n]" 
+2013-06-27 10:58:27,678 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "X-AspNet-Version: 2.0.50727[\r][\n]" 
+2013-06-27 10:58:27,679 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Cache-Control: private, max-age=0[\r][\n]" 
+2013-06-27 10:58:27,679 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Content-Type: text/xml; charset=utf-8[\r][\n]" 
+2013-06-27 10:58:27,679 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Content-Length: 372[\r][\n]" 
+2013-06-27 10:58:27,682 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:getResponseBody(679) ----> Buffering response body 
+2013-06-27 10:58:27,683 | DEBUG | [Thread-9] | httpclient.wire.content:wire(83) ----> << "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><SetRingbackResponse xmlns="http://tempuri.org/"><SetRingbackResult>702|271583|Hello</SetRingbackResult></SetRingbackResponse></soap:Body></soap:Envelope>" 
+2013-06-27 10:58:27,684 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(921) ----> Resorting to protocol version default close connection policy 
+2013-06-27 10:58:27,684 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(925) ----> Should NOT close connection, using HTTP/1.1 
+2013-06-27 10:58:27,684 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpConnection:releaseConnection(1177) ----> Releasing connection back to connection manager. 
+2013-06-27 10:58:27,707 | DEBUG | [Thread-9] | MyCallWebservice.SetRingback:CallWebservice(111) ----> Call_WS_SetRingback------->MSISDN:841257034555 || Command:Search || RingbackCode: || RequestTime: || Result:702|271583|Hello 
+2013-06-27 10:58:27,708 | ERROR | [Thread-9] | class MyProcess.RingbackProcess:getMessages(109) ----> Ringback_Error 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:468)
+	at java.lang.Integer.parseInt(Integer.java:497)
+	at MyProcess.RingbackProcess.SearchAndSettoneRingback(RingbackProcess.java:191)
+	at MyProcess.RingbackProcess.getMessages(RingbackProcess.java:86)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:41)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:189)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:106)
+2013-06-27 10:58:27,710 |  INFO | [Thread-9] | class MyProcess.RingbackProcess:getMessages(119) ----> NhacCho-->UserID:841257034555|| MT:Ma hoac Ten bai hat ban yeu cau khong co tren he thong 6x83. Vui long kiem tra lai. 
+2013-06-27 10:58:27,715 | DEBUG | [Thread-9] | class MyProcessServer.ContentAbstract:sendMT(227) ----> ContentAbstract_SEND_MT-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS || Info:Ma hoac Ten bai hat ban yeu cau khong co tren he thong 6x83. Vui long kiem tra lai. || MessageType:1 || ContentType:21 || RequestID:1234567890 || RequestTime:2013-06-27 10:58:03.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:SEND MT THANH CONG 
+2013-06-27 10:58:27,715 |  INFO | [Thread-19] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:841257034555@NS hello 
+2013-06-27 10:59:14,017 |  INFO | [Thread-5] | class MyProcessServer.LoadMO:run(121) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 10:59:13.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Q:6083[Size:0] 
+2013-06-27 10:59:14,017 |  INFO | [Thread-11] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 10:59:13.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Keyword:NS 
+2013-06-27 10:59:14,018 |  INFO | [Thread-11] | class MyProcessServer.ExecuteQueue:processQueueMsg(182) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 10:59:13.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:ClassName:MyProcess.RingbackProcess 
+2013-06-27 10:59:24,227 | DEBUG | [Thread-11] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(277) ----> Authenticating with BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 10:59:24,228 |  WARN | [Thread-11] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(287) ----> Required credentials not available for BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 10:59:24,229 |  WARN | [Thread-11] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(289) ----> Preemptive authentication requested but no default credentials available 
+2013-06-27 10:59:24,229 | DEBUG | [Thread-11] | org.apache.commons.httpclient.HttpConnection:open(691) ----> Open connection to 115.146.122.173:8092 
+2013-06-27 10:59:24,235 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> >> "POST /SetRingBack.asmx HTTP/1.1[\r][\n]" 
+2013-06-27 10:59:24,236 | DEBUG | [Thread-11] | org.apache.commons.httpclient.HttpMethodBase:addHostRequestHeader(1235) ----> Adding Host request header 
+2013-06-27 10:59:24,237 | DEBUG | [Thread-11] | org.apache.commons.httpclient.HttpMethodBase:getContentCharSet(2201) ----> Default charset used: ISO-8859-1 
+2013-06-27 10:59:24,238 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> >> "Content-Type: text/xml[\r][\n]" 
+2013-06-27 10:59:24,239 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> >> "SOAPAction: http://tempuri.org/SetRingback[\r][\n]" 
+2013-06-27 10:59:24,240 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> >> "User-Agent: Jakarta Commons-HttpClient/3.0[\r][\n]" 
+2013-06-27 10:59:24,240 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> >> "Host: 115.146.122.173:8092[\r][\n]" 
+2013-06-27 10:59:24,241 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> >> "Content-Length: 532[\r][\n]" 
+2013-06-27 10:59:24,242 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> >> "[\r][\n]" 
+2013-06-27 10:59:24,243 | DEBUG | [Thread-11] | httpclient.wire.content:wire(83) ----> >> "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><SetRingback xmlns="http://tempuri.org/"><Partner_UserName>HB6x83</Partner_UserName><Partner_Password>HB6x83DFF3424</Partner_Password><Command>Search</Command><MSISDN>841257034555</MSISDN><ValidCode>hello</ValidCode><RingBackCode></RingBackCode><RequestTime></RequestTime></SetRingback></soap:Body></soap:Envelope>" 
+2013-06-27 10:59:24,244 | DEBUG | [Thread-11] | org.apache.commons.httpclient.methods.EntityEnclosingMethod:writeRequestBody(504) ----> Request body sent 
+2013-06-27 10:59:25,087 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> << "HTTP/1.1 200 OK[\r][\n]" 
+2013-06-27 10:59:25,090 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> << "Date: Thu, 27 Jun 2013 03:59:27 GMT[\r][\n]" 
+2013-06-27 10:59:25,091 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> << "Server: Microsoft-IIS/6.0[\r][\n]" 
+2013-06-27 10:59:25,092 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> << "X-Powered-By: ASP.NET[\r][\n]" 
+2013-06-27 10:59:25,093 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> << "X-AspNet-Version: 2.0.50727[\r][\n]" 
+2013-06-27 10:59:25,094 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> << "Cache-Control: private, max-age=0[\r][\n]" 
+2013-06-27 10:59:25,095 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> << "Content-Type: text/xml; charset=utf-8[\r][\n]" 
+2013-06-27 10:59:25,096 | DEBUG | [Thread-11] | httpclient.wire.header:wire(69) ----> << "Content-Length: 372[\r][\n]" 
+2013-06-27 10:59:25,097 | DEBUG | [Thread-11] | org.apache.commons.httpclient.HttpMethodBase:getResponseBody(679) ----> Buffering response body 
+2013-06-27 10:59:25,099 | DEBUG | [Thread-11] | httpclient.wire.content:wire(83) ----> << "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><SetRingbackResponse xmlns="http://tempuri.org/"><SetRingbackResult>702|271583|Hello</SetRingbackResult></SetRingbackResponse></soap:Body></soap:Envelope>" 
+2013-06-27 10:59:25,100 | DEBUG | [Thread-11] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(921) ----> Resorting to protocol version default close connection policy 
+2013-06-27 10:59:25,101 | DEBUG | [Thread-11] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(925) ----> Should NOT close connection, using HTTP/1.1 
+2013-06-27 10:59:25,102 | DEBUG | [Thread-11] | org.apache.commons.httpclient.HttpConnection:releaseConnection(1177) ----> Releasing connection back to connection manager. 
+2013-06-27 10:59:25,117 | DEBUG | [Thread-11] | MyCallWebservice.SetRingback:CallWebservice(111) ----> Call_WS_SetRingback------->MSISDN:841257034555 || Command:Search || RingbackCode: || RequestTime: || Result:702|271583|Hello 
+2013-06-27 10:59:33,515 | ERROR | [Thread-11] | class MyProcess.RingbackProcess:getMessages(109) ----> Ringback_Error 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:468)
+	at java.lang.Integer.parseInt(Integer.java:497)
+	at MyProcess.RingbackProcess.SearchAndSettoneRingback(RingbackProcess.java:191)
+	at MyProcess.RingbackProcess.getMessages(RingbackProcess.java:86)
+	at MyProcessServer.ContentAbstract.start(ContentAbstract.java:41)
+	at MyProcessServer.ExecuteQueue.processQueueMsg(ExecuteQueue.java:189)
+	at MyProcessServer.ExecuteQueue.run(ExecuteQueue.java:106)
+2013-06-27 10:59:33,516 |  INFO | [Thread-11] | class MyProcess.RingbackProcess:getMessages(119) ----> NhacCho-->UserID:841257034555|| MT:Ma hoac Ten bai hat ban yeu cau khong co tren he thong 6x83. Vui long kiem tra lai. 
+2013-06-27 10:59:33,522 | DEBUG | [Thread-11] | class MyProcessServer.ContentAbstract:sendMT(227) ----> ContentAbstract_SEND_MT-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS || Info:Ma hoac Ten bai hat ban yeu cau khong co tren he thong 6x83. Vui long kiem tra lai. || MessageType:1 || ContentType:21 || RequestID:1234567890 || RequestTime:2013-06-27 10:59:13.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:SEND MT THANH CONG 
+2013-06-27 10:59:33,523 |  INFO | [Thread-19] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:841257034555@NS hello 
+2013-06-27 10:59:37,945 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(121) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 10:59:37.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Q:6083[Size:1] 
+2013-06-27 10:59:37,947 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 10:59:37.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Keyword:NS 
+2013-06-27 10:59:37,948 |  INFO | [Thread-10] | class MyProcessServer.ExecuteQueue:processQueueMsg(182) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 10:59:37.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:ClassName:MyProcess.RingbackProcess 
+2013-06-27 11:00:05,610 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(277) ----> Authenticating with BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 11:00:05,612 |  WARN | [Thread-10] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(287) ----> Required credentials not available for BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 11:00:05,613 |  WARN | [Thread-10] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(289) ----> Preemptive authentication requested but no default credentials available 
+2013-06-27 11:00:05,614 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpConnection:open(691) ----> Open connection to 115.146.122.173:8092 
+2013-06-27 11:00:05,621 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "POST /SetRingBack.asmx HTTP/1.1[\r][\n]" 
+2013-06-27 11:00:05,623 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpMethodBase:addHostRequestHeader(1235) ----> Adding Host request header 
+2013-06-27 11:00:05,624 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpMethodBase:getContentCharSet(2201) ----> Default charset used: ISO-8859-1 
+2013-06-27 11:00:05,626 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "Content-Type: text/xml[\r][\n]" 
+2013-06-27 11:00:05,627 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "SOAPAction: http://tempuri.org/SetRingback[\r][\n]" 
+2013-06-27 11:00:05,628 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "User-Agent: Jakarta Commons-HttpClient/3.0[\r][\n]" 
+2013-06-27 11:00:05,629 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "Host: 115.146.122.173:8092[\r][\n]" 
+2013-06-27 11:00:05,629 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "Content-Length: 532[\r][\n]" 
+2013-06-27 11:00:05,630 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> >> "[\r][\n]" 
+2013-06-27 11:00:05,631 | DEBUG | [Thread-10] | httpclient.wire.content:wire(83) ----> >> "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><SetRingback xmlns="http://tempuri.org/"><Partner_UserName>HB6x83</Partner_UserName><Partner_Password>HB6x83DFF3424</Partner_Password><Command>Search</Command><MSISDN>841257034555</MSISDN><ValidCode>hello</ValidCode><RingBackCode></RingBackCode><RequestTime></RequestTime></SetRingback></soap:Body></soap:Envelope>" 
+2013-06-27 11:00:05,632 | DEBUG | [Thread-10] | org.apache.commons.httpclient.methods.EntityEnclosingMethod:writeRequestBody(504) ----> Request body sent 
+2013-06-27 11:00:06,594 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "HTTP/1.1 200 OK[\r][\n]" 
+2013-06-27 11:00:06,597 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "Date: Thu, 27 Jun 2013 04:00:08 GMT[\r][\n]" 
+2013-06-27 11:00:06,598 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "Server: Microsoft-IIS/6.0[\r][\n]" 
+2013-06-27 11:00:06,599 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "X-Powered-By: ASP.NET[\r][\n]" 
+2013-06-27 11:00:06,600 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "X-AspNet-Version: 2.0.50727[\r][\n]" 
+2013-06-27 11:00:06,601 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "Cache-Control: private, max-age=0[\r][\n]" 
+2013-06-27 11:00:06,602 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "Content-Type: text/xml; charset=utf-8[\r][\n]" 
+2013-06-27 11:00:06,603 | DEBUG | [Thread-10] | httpclient.wire.header:wire(69) ----> << "Content-Length: 372[\r][\n]" 
+2013-06-27 11:00:07,359 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpMethodBase:getResponseBody(679) ----> Buffering response body 
+2013-06-27 11:00:07,361 | DEBUG | [Thread-10] | httpclient.wire.content:wire(83) ----> << "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><SetRingbackResponse xmlns="http://tempuri.org/"><SetRingbackResult>702|271583|Hello</SetRingbackResult></SetRingbackResponse></soap:Body></soap:Envelope>" 
+2013-06-27 11:00:07,363 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(921) ----> Resorting to protocol version default close connection policy 
+2013-06-27 11:00:07,368 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(925) ----> Should NOT close connection, using HTTP/1.1 
+2013-06-27 11:00:07,369 | DEBUG | [Thread-10] | org.apache.commons.httpclient.HttpConnection:releaseConnection(1177) ----> Releasing connection back to connection manager. 
+2013-06-27 11:00:13,508 | DEBUG | [Thread-10] | MyCallWebservice.SetRingback:CallWebservice(111) ----> Call_WS_SetRingback------->MSISDN:841257034555 || Command:Search || RingbackCode: || RequestTime: || Result:702|271583|Hello 
+2013-06-27 11:00:35,276 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(144) ----> Reading configuration file config.properties 
+2013-06-27 11:00:36,949 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(116) ----> LoadConfig - Start 
+2013-06-27 11:00:38,347 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(151) ----> Loaded. 
+2013-06-27 11:00:38,347 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(266) ----> loadSMSDataTable:data.dat 
+2013-06-27 11:00:38,348 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(275) ----> data.dat is empty 
+2013-06-27 11:00:38,349 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(318) ----> Deleting.....: data.dat 
+2013-06-27 11:00:38,350 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(266) ----> loadSMSDataTable:receivelog.dat 
+2013-06-27 11:00:38,350 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(275) ----> receivelog.dat is empty 
+2013-06-27 11:00:38,351 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(318) ----> Deleting.....: receivelog.dat 
+2013-06-27 11:00:38,351 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(158) ----> Start: LoadMO 
+2013-06-27 11:00:38,406 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(176) ----> Start: ExecuteQueue 
+2013-06-27 11:00:38,471 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(185) ----> Start: ExecuteInsertReceiveLog 
+2013-06-27 11:00:38,490 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(414) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2013-06-27 11:00:38,511 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(397) ----> Listen MO............................................................... 
+2013-06-27 11:00:41,562 |  INFO | [Thread-7] | class MyProcessServer.LoadMO:run(121) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 11:00:41.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Q:6083[Size:1] 
+2013-06-27 11:00:41,570 |  INFO | [Thread-9] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 11:00:41.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Keyword:NS 
+2013-06-27 11:00:41,580 |  INFO | [Thread-9] | class MyProcessServer.ExecuteQueue:processQueueMsg(182) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 11:00:41.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:ClassName:MyProcess.RingbackProcess 
+2013-06-27 11:00:47,928 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(71) ----> Java version: 1.6.0_13 
+2013-06-27 11:00:47,929 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(72) ----> Java vendor: Sun Microsystems Inc. 
+2013-06-27 11:00:47,929 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(73) ----> Java class path: D:\MyEclipse\ProcessNew\bin;C:\Users\Administrator\AppData\Local\MyEclipse\Common\plugins\com.genuitec.eclipse.ws.xfire_9.0.0.me201109130910\lib\webservices-api.jar;C:\Users\Administrator\AppData\Local\MyEclipse\Common\plugins\com.genuitec.eclipse.ws.xfire_9.0.0.me201109130910\lib\webservices-extra-api.jar;D:\MyEclipse\JavaLib\log4j-1.2.17.jar;D:\MyEclipse\MyUtility\bin;D:\MyEclipse\MyDataProcess\bin;D:\MyEclipse\MyConnection\bin;D:\MyEclipse\JavaLib\Proxool\commons-logging-1.1.1.jar;D:\MyEclipse\JavaLib\Proxool\proxool-0.9.1.jar;D:\MyEclipse\JavaLib\Proxool\proxool-cglib.jar;D:\MyEclipse\JavaLib\mysql-connector-java-5.1.22-bin.jar;D:\MyEclipse\JavaLib\SQl\sqljdbc_2.0\enu\sqljdbc4.jar;D:\MyEclipse\MyDataSportVote\bin;D:\MyEclipse\MyDataHBStore\bin;D:\MyEclipse\JavaLib\commons-codec-1.3.jar;D:\MyEclipse\JavaLib\commons-discovery-0.2.jar;D:\MyEclipse\JavaLib\commons-httpclient-3.0.jar;D:\MyEclipse\JavaLib\commons-logging-1.0.4.jar 
+2013-06-27 11:00:47,930 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(74) ----> Operating system name: Windows Vista 
+2013-06-27 11:00:47,930 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(75) ----> Operating system architecture: amd64 
+2013-06-27 11:00:47,931 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(76) ----> Operating system version: 6.1 
+2013-06-27 11:00:47,932 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration) 
+2013-06-27 11:00:47,932 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunRsaSign 1.5: Sun RSA signature provider 
+2013-06-27 11:00:47,933 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1) 
+2013-06-27 11:00:47,933 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC) 
+2013-06-27 11:00:47,934 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJGSS 1.0: Sun (Kerberos v5, SPNEGO) 
+2013-06-27 11:00:47,934 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5) 
+2013-06-27 11:00:47,935 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory) 
+2013-06-27 11:00:47,935 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunPCSC 1.6: Sun PC/SC provider 
+2013-06-27 11:00:47,942 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.useragent = Jakarta Commons-HttpClient/3.0 
+2013-06-27 11:00:47,950 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.version = HTTP/1.1 
+2013-06-27 11:00:47,954 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager 
+2013-06-27 11:00:47,955 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.cookie-policy = rfc2109 
+2013-06-27 11:00:47,955 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.element-charset = US-ASCII 
+2013-06-27 11:00:47,956 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.content-charset = ISO-8859-1 
+2013-06-27 11:00:47,961 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7d7082d8 
+2013-06-27 11:00:47,962 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z] 
+2013-06-27 11:00:48,154 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(277) ----> Authenticating with BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 11:00:48,157 |  WARN | [Thread-9] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(287) ----> Required credentials not available for BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 11:00:48,157 |  WARN | [Thread-9] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(289) ----> Preemptive authentication requested but no default credentials available 
+2013-06-27 11:00:48,158 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpConnection:open(691) ----> Open connection to 115.146.122.173:8092 
+2013-06-27 11:00:48,167 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "POST /SetRingBack.asmx HTTP/1.1[\r][\n]" 
+2013-06-27 11:00:48,168 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:addHostRequestHeader(1235) ----> Adding Host request header 
+2013-06-27 11:00:48,200 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:getContentCharSet(2201) ----> Default charset used: ISO-8859-1 
+2013-06-27 11:00:48,204 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "Content-Type: text/xml[\r][\n]" 
+2013-06-27 11:00:48,205 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "SOAPAction: http://tempuri.org/SetRingback[\r][\n]" 
+2013-06-27 11:00:48,206 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "User-Agent: Jakarta Commons-HttpClient/3.0[\r][\n]" 
+2013-06-27 11:00:48,207 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "Host: 115.146.122.173:8092[\r][\n]" 
+2013-06-27 11:00:48,208 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "Content-Length: 532[\r][\n]" 
+2013-06-27 11:00:48,208 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "[\r][\n]" 
+2013-06-27 11:00:48,210 | DEBUG | [Thread-9] | httpclient.wire.content:wire(83) ----> >> "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><SetRingback xmlns="http://tempuri.org/"><Partner_UserName>HB6x83</Partner_UserName><Partner_Password>HB6x83DFF3424</Partner_Password><Command>Search</Command><MSISDN>841257034555</MSISDN><ValidCode>hello</ValidCode><RingBackCode></RingBackCode><RequestTime></RequestTime></SetRingback></soap:Body></soap:Envelope>" 
+2013-06-27 11:00:48,210 | DEBUG | [Thread-9] | org.apache.commons.httpclient.methods.EntityEnclosingMethod:writeRequestBody(504) ----> Request body sent 
+2013-06-27 11:00:49,072 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "HTTP/1.1 200 OK[\r][\n]" 
+2013-06-27 11:00:49,080 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Date: Thu, 27 Jun 2013 04:00:51 GMT[\r][\n]" 
+2013-06-27 11:00:49,081 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Server: Microsoft-IIS/6.0[\r][\n]" 
+2013-06-27 11:00:49,082 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "X-Powered-By: ASP.NET[\r][\n]" 
+2013-06-27 11:00:49,083 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "X-AspNet-Version: 2.0.50727[\r][\n]" 
+2013-06-27 11:00:49,084 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Cache-Control: private, max-age=0[\r][\n]" 
+2013-06-27 11:00:49,085 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Content-Type: text/xml; charset=utf-8[\r][\n]" 
+2013-06-27 11:00:49,086 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Content-Length: 372[\r][\n]" 
+2013-06-27 11:00:49,092 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:getResponseBody(679) ----> Buffering response body 
+2013-06-27 11:00:49,094 | DEBUG | [Thread-9] | httpclient.wire.content:wire(83) ----> << "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><SetRingbackResponse xmlns="http://tempuri.org/"><SetRingbackResult>702|271583|Hello</SetRingbackResult></SetRingbackResponse></soap:Body></soap:Envelope>" 
+2013-06-27 11:00:49,096 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(921) ----> Resorting to protocol version default close connection policy 
+2013-06-27 11:00:49,097 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(925) ----> Should NOT close connection, using HTTP/1.1 
+2013-06-27 11:00:49,098 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpConnection:releaseConnection(1177) ----> Releasing connection back to connection manager. 
+2013-06-27 11:00:49,130 | DEBUG | [Thread-9] | MyCallWebservice.SetRingback:CallWebservice(111) ----> Call_WS_SetRingback------->MSISDN:841257034555 || Command:Search || RingbackCode: || RequestTime: || Result:702|271583|Hello 
+2013-06-27 11:02:21,601 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(144) ----> Reading configuration file config.properties 
+2013-06-27 11:02:23,185 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(116) ----> LoadConfig - Start 
+2013-06-27 11:02:24,355 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(151) ----> Loaded. 
+2013-06-27 11:02:24,356 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(266) ----> loadSMSDataTable:data.dat 
+2013-06-27 11:02:24,358 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(275) ----> data.dat is empty 
+2013-06-27 11:02:24,360 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(318) ----> Deleting.....: data.dat 
+2013-06-27 11:02:24,360 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(266) ----> loadSMSDataTable:receivelog.dat 
+2013-06-27 11:02:24,740 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(275) ----> receivelog.dat is empty 
+2013-06-27 11:02:24,741 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(318) ----> Deleting.....: receivelog.dat 
+2013-06-27 11:02:24,741 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(158) ----> Start: LoadMO 
+2013-06-27 11:02:24,785 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(176) ----> Start: ExecuteQueue 
+2013-06-27 11:02:24,843 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(185) ----> Start: ExecuteInsertReceiveLog 
+2013-06-27 11:02:24,862 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(414) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2013-06-27 11:02:24,876 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(397) ----> Listen MO............................................................... 
+2013-06-27 11:02:29,639 |  INFO | [Thread-8] | class MyProcessServer.LoadMO:run(121) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 11:02:29.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Q:6083[Size:0] 
+2013-06-27 11:02:29,645 |  INFO | [Thread-9] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 11:02:29.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Keyword:NS 
+2013-06-27 11:02:29,649 |  INFO | [Thread-9] | class MyProcessServer.ExecuteQueue:processQueueMsg(182) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 11:02:29.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:ClassName:MyProcess.RingbackProcess 
+2013-06-27 11:02:37,726 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(71) ----> Java version: 1.6.0_13 
+2013-06-27 11:02:37,727 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(72) ----> Java vendor: Sun Microsystems Inc. 
+2013-06-27 11:02:37,727 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(73) ----> Java class path: D:\MyEclipse\ProcessNew\bin;C:\Users\Administrator\AppData\Local\MyEclipse\Common\plugins\com.genuitec.eclipse.ws.xfire_9.0.0.me201109130910\lib\webservices-api.jar;C:\Users\Administrator\AppData\Local\MyEclipse\Common\plugins\com.genuitec.eclipse.ws.xfire_9.0.0.me201109130910\lib\webservices-extra-api.jar;D:\MyEclipse\JavaLib\log4j-1.2.17.jar;D:\MyEclipse\MyUtility\bin;D:\MyEclipse\MyDataProcess\bin;D:\MyEclipse\MyConnection\bin;D:\MyEclipse\JavaLib\Proxool\commons-logging-1.1.1.jar;D:\MyEclipse\JavaLib\Proxool\proxool-0.9.1.jar;D:\MyEclipse\JavaLib\Proxool\proxool-cglib.jar;D:\MyEclipse\JavaLib\mysql-connector-java-5.1.22-bin.jar;D:\MyEclipse\JavaLib\SQl\sqljdbc_2.0\enu\sqljdbc4.jar;D:\MyEclipse\MyDataSportVote\bin;D:\MyEclipse\MyDataHBStore\bin;D:\MyEclipse\JavaLib\commons-codec-1.3.jar;D:\MyEclipse\JavaLib\commons-discovery-0.2.jar;D:\MyEclipse\JavaLib\commons-httpclient-3.0.jar;D:\MyEclipse\JavaLib\commons-logging-1.0.4.jar 
+2013-06-27 11:02:37,728 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(74) ----> Operating system name: Windows Vista 
+2013-06-27 11:02:37,729 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(75) ----> Operating system architecture: amd64 
+2013-06-27 11:02:37,729 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(76) ----> Operating system version: 6.1 
+2013-06-27 11:02:37,730 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration) 
+2013-06-27 11:02:37,730 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunRsaSign 1.5: Sun RSA signature provider 
+2013-06-27 11:02:37,731 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1) 
+2013-06-27 11:02:37,731 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC) 
+2013-06-27 11:02:37,732 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJGSS 1.0: Sun (Kerberos v5, SPNEGO) 
+2013-06-27 11:02:37,732 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5) 
+2013-06-27 11:02:37,733 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory) 
+2013-06-27 11:02:37,733 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunPCSC 1.6: Sun PC/SC provider 
+2013-06-27 11:02:37,740 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.useragent = Jakarta Commons-HttpClient/3.0 
+2013-06-27 11:02:37,748 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.version = HTTP/1.1 
+2013-06-27 11:02:37,752 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager 
+2013-06-27 11:02:37,752 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.cookie-policy = rfc2109 
+2013-06-27 11:02:37,753 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.element-charset = US-ASCII 
+2013-06-27 11:02:37,754 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.content-charset = ISO-8859-1 
+2013-06-27 11:02:37,759 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@706a4d1a 
+2013-06-27 11:02:37,760 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z] 
+2013-06-27 11:02:37,948 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(277) ----> Authenticating with BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 11:02:37,952 |  WARN | [Thread-9] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(287) ----> Required credentials not available for BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 11:02:37,952 |  WARN | [Thread-9] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(289) ----> Preemptive authentication requested but no default credentials available 
+2013-06-27 11:02:37,953 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpConnection:open(691) ----> Open connection to 115.146.122.173:8092 
+2013-06-27 11:02:37,961 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "POST /SetRingBack.asmx HTTP/1.1[\r][\n]" 
+2013-06-27 11:02:37,962 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:addHostRequestHeader(1235) ----> Adding Host request header 
+2013-06-27 11:02:37,995 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:getContentCharSet(2201) ----> Default charset used: ISO-8859-1 
+2013-06-27 11:02:37,999 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "Content-Type: text/xml[\r][\n]" 
+2013-06-27 11:02:38,000 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "SOAPAction: http://tempuri.org/SetRingback[\r][\n]" 
+2013-06-27 11:02:38,001 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "User-Agent: Jakarta Commons-HttpClient/3.0[\r][\n]" 
+2013-06-27 11:02:38,002 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "Host: 115.146.122.173:8092[\r][\n]" 
+2013-06-27 11:02:38,003 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "Content-Length: 532[\r][\n]" 
+2013-06-27 11:02:38,003 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "[\r][\n]" 
+2013-06-27 11:02:38,005 | DEBUG | [Thread-9] | httpclient.wire.content:wire(83) ----> >> "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><SetRingback xmlns="http://tempuri.org/"><Partner_UserName>HB6x83</Partner_UserName><Partner_Password>HB6x83DFF3424</Partner_Password><Command>Search</Command><MSISDN>841257034555</MSISDN><ValidCode>hello</ValidCode><RingBackCode></RingBackCode><RequestTime></RequestTime></SetRingback></soap:Body></soap:Envelope>" 
+2013-06-27 11:02:38,005 | DEBUG | [Thread-9] | org.apache.commons.httpclient.methods.EntityEnclosingMethod:writeRequestBody(504) ----> Request body sent 
+2013-06-27 11:02:38,910 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "HTTP/1.1 200 OK[\r][\n]" 
+2013-06-27 11:02:38,918 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Date: Thu, 27 Jun 2013 04:02:41 GMT[\r][\n]" 
+2013-06-27 11:02:38,919 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Server: Microsoft-IIS/6.0[\r][\n]" 
+2013-06-27 11:02:38,920 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "X-Powered-By: ASP.NET[\r][\n]" 
+2013-06-27 11:02:38,921 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "X-AspNet-Version: 2.0.50727[\r][\n]" 
+2013-06-27 11:02:38,922 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Cache-Control: private, max-age=0[\r][\n]" 
+2013-06-27 11:02:38,923 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Content-Type: text/xml; charset=utf-8[\r][\n]" 
+2013-06-27 11:02:38,924 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Content-Length: 372[\r][\n]" 
+2013-06-27 11:02:38,930 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:getResponseBody(679) ----> Buffering response body 
+2013-06-27 11:02:38,932 | DEBUG | [Thread-9] | httpclient.wire.content:wire(83) ----> << "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><SetRingbackResponse xmlns="http://tempuri.org/"><SetRingbackResult>702|271583|Hello</SetRingbackResult></SetRingbackResponse></soap:Body></soap:Envelope>" 
+2013-06-27 11:02:38,934 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(921) ----> Resorting to protocol version default close connection policy 
+2013-06-27 11:02:38,935 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(925) ----> Should NOT close connection, using HTTP/1.1 
+2013-06-27 11:02:38,936 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpConnection:releaseConnection(1177) ----> Releasing connection back to connection manager. 
+2013-06-27 11:02:38,967 | DEBUG | [Thread-9] | MyCallWebservice.SetRingback:CallWebservice(111) ----> Call_WS_SetRingback------->MSISDN:841257034555 || Command:Search || RingbackCode: || RequestTime: || Result:702|271583|Hello 
+2013-06-27 11:10:32,707 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(144) ----> Reading configuration file config.properties 
+2013-06-27 11:10:34,463 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(116) ----> LoadConfig - Start 
+2013-06-27 11:10:35,550 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(153) ----> Loaded. 
+2013-06-27 11:10:35,550 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(278) ----> loadSMSDataTable:data.dat 
+2013-06-27 11:10:35,551 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(287) ----> data.dat is empty 
+2013-06-27 11:10:35,552 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(330) ----> Deleting.....: data.dat 
+2013-06-27 11:10:35,552 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(278) ----> loadSMSDataTable:receivelog.dat 
+2013-06-27 11:10:35,552 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(287) ----> receivelog.dat is empty 
+2013-06-27 11:10:35,552 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(330) ----> Deleting.....: receivelog.dat 
+2013-06-27 11:10:35,553 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(160) ----> Start: LoadMO 
+2013-06-27 11:10:35,582 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(178) ----> Start: ExecuteQueue 
+2013-06-27 11:10:35,645 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(187) ----> Start: ExecuteInsertReceiveLog 
+2013-06-27 11:10:35,659 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(426) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2013-06-27 11:10:35,685 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(409) ----> Listen MO............................................................... 
+2013-06-27 11:10:38,671 |  INFO | [Thread-5] | class MyProcessServer.LoadMO:run(121) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 11:10:38.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Q:6083[Size:1] 
+2013-06-27 11:10:38,673 |  INFO | [Thread-9] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 11:10:38.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Keyword:NS 
+2013-06-27 11:10:38,707 |  INFO | [Thread-9] | class MyProcessServer.ExecuteQueue:processQueueMsg(182) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 11:10:38.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:ClassName:MyProcess.RingbackProcess 
+2013-06-27 11:10:44,153 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(71) ----> Java version: 1.6.0_13 
+2013-06-27 11:10:44,154 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(72) ----> Java vendor: Sun Microsystems Inc. 
+2013-06-27 11:10:44,154 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(73) ----> Java class path: D:\MyEclipse\ProcessNew\bin;C:\Users\Administrator\AppData\Local\MyEclipse\Common\plugins\com.genuitec.eclipse.ws.xfire_9.0.0.me201109130910\lib\webservices-api.jar;C:\Users\Administrator\AppData\Local\MyEclipse\Common\plugins\com.genuitec.eclipse.ws.xfire_9.0.0.me201109130910\lib\webservices-extra-api.jar;D:\MyEclipse\JavaLib\log4j-1.2.17.jar;D:\MyEclipse\MyUtility\bin;D:\MyEclipse\MyDataProcess\bin;D:\MyEclipse\MyConnection\bin;D:\MyEclipse\JavaLib\Proxool\commons-logging-1.1.1.jar;D:\MyEclipse\JavaLib\Proxool\proxool-0.9.1.jar;D:\MyEclipse\JavaLib\Proxool\proxool-cglib.jar;D:\MyEclipse\JavaLib\mysql-connector-java-5.1.22-bin.jar;D:\MyEclipse\JavaLib\SQl\sqljdbc_2.0\enu\sqljdbc4.jar;D:\MyEclipse\MyDataSportVote\bin;D:\MyEclipse\MyDataHBStore\bin;D:\MyEclipse\JavaLib\commons-codec-1.3.jar;D:\MyEclipse\JavaLib\commons-discovery-0.2.jar;D:\MyEclipse\JavaLib\commons-httpclient-3.0.jar;D:\MyEclipse\JavaLib\commons-logging-1.0.4.jar 
+2013-06-27 11:10:44,155 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(74) ----> Operating system name: Windows Vista 
+2013-06-27 11:10:44,155 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(75) ----> Operating system architecture: amd64 
+2013-06-27 11:10:44,155 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(76) ----> Operating system version: 6.1 
+2013-06-27 11:10:44,156 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration) 
+2013-06-27 11:10:44,156 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunRsaSign 1.5: Sun RSA signature provider 
+2013-06-27 11:10:44,156 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1) 
+2013-06-27 11:10:44,157 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC) 
+2013-06-27 11:10:44,159 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunJGSS 1.0: Sun (Kerberos v5, SPNEGO) 
+2013-06-27 11:10:44,159 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5) 
+2013-06-27 11:10:44,160 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory) 
+2013-06-27 11:10:44,160 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpClient:<clinit>(81) ----> SunPCSC 1.6: Sun PC/SC provider 
+2013-06-27 11:10:44,163 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.useragent = Jakarta Commons-HttpClient/3.0 
+2013-06-27 11:10:44,167 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.version = HTTP/1.1 
+2013-06-27 11:10:44,169 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager 
+2013-06-27 11:10:44,170 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.cookie-policy = rfc2109 
+2013-06-27 11:10:44,171 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.element-charset = US-ASCII 
+2013-06-27 11:10:44,171 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.protocol.content-charset = ISO-8859-1 
+2013-06-27 11:10:44,174 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@4e1d2b8e 
+2013-06-27 11:10:44,176 | DEBUG | [Thread-9] | org.apache.commons.httpclient.params.DefaultHttpParams:setParameter(150) ----> Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z] 
+2013-06-27 11:10:44,268 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(277) ----> Authenticating with BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 11:10:44,269 |  WARN | [Thread-9] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(287) ----> Required credentials not available for BASIC <any realm>@115.146.122.173:8092 
+2013-06-27 11:10:44,270 |  WARN | [Thread-9] | org.apache.commons.httpclient.HttpMethodDirector:authenticateHost(289) ----> Preemptive authentication requested but no default credentials available 
+2013-06-27 11:10:44,270 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpConnection:open(691) ----> Open connection to 115.146.122.173:8092 
+2013-06-27 11:10:44,277 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "POST /SetRingBack.asmx HTTP/1.1[\r][\n]" 
+2013-06-27 11:10:44,278 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:addHostRequestHeader(1235) ----> Adding Host request header 
+2013-06-27 11:10:44,292 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:getContentCharSet(2201) ----> Default charset used: ISO-8859-1 
+2013-06-27 11:10:44,294 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "Content-Type: text/xml[\r][\n]" 
+2013-06-27 11:10:44,295 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "SOAPAction: http://tempuri.org/SetRingback[\r][\n]" 
+2013-06-27 11:10:44,299 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "User-Agent: Jakarta Commons-HttpClient/3.0[\r][\n]" 
+2013-06-27 11:10:44,299 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "Host: 115.146.122.173:8092[\r][\n]" 
+2013-06-27 11:10:44,299 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "Content-Length: 532[\r][\n]" 
+2013-06-27 11:10:44,299 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> >> "[\r][\n]" 
+2013-06-27 11:10:44,300 | DEBUG | [Thread-9] | httpclient.wire.content:wire(83) ----> >> "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><SetRingback xmlns="http://tempuri.org/"><Partner_UserName>HB6x83</Partner_UserName><Partner_Password>HB6x83DFF3424</Partner_Password><Command>Search</Command><MSISDN>841257034555</MSISDN><ValidCode>hello</ValidCode><RingBackCode></RingBackCode><RequestTime></RequestTime></SetRingback></soap:Body></soap:Envelope>" 
+2013-06-27 11:10:44,301 | DEBUG | [Thread-9] | org.apache.commons.httpclient.methods.EntityEnclosingMethod:writeRequestBody(504) ----> Request body sent 
+2013-06-27 11:10:48,355 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "HTTP/1.1 200 OK[\r][\n]" 
+2013-06-27 11:10:48,358 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Date: Thu, 27 Jun 2013 04:10:50 GMT[\r][\n]" 
+2013-06-27 11:10:48,359 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Server: Microsoft-IIS/6.0[\r][\n]" 
+2013-06-27 11:10:48,359 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "X-Powered-By: ASP.NET[\r][\n]" 
+2013-06-27 11:10:48,359 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "X-AspNet-Version: 2.0.50727[\r][\n]" 
+2013-06-27 11:10:48,360 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Cache-Control: private, max-age=0[\r][\n]" 
+2013-06-27 11:10:48,360 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Content-Type: text/xml; charset=utf-8[\r][\n]" 
+2013-06-27 11:10:48,360 | DEBUG | [Thread-9] | httpclient.wire.header:wire(69) ----> << "Content-Length: 372[\r][\n]" 
+2013-06-27 11:10:48,363 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:getResponseBody(679) ----> Buffering response body 
+2013-06-27 11:10:48,363 | DEBUG | [Thread-9] | httpclient.wire.content:wire(83) ----> << "<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><SetRingbackResponse xmlns="http://tempuri.org/"><SetRingbackResult>702|271583|Hello</SetRingbackResult></SetRingbackResponse></soap:Body></soap:Envelope>" 
+2013-06-27 11:10:48,364 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(921) ----> Resorting to protocol version default close connection policy 
+2013-06-27 11:10:48,365 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpMethodBase:shouldCloseConnection(925) ----> Should NOT close connection, using HTTP/1.1 
+2013-06-27 11:10:48,365 | DEBUG | [Thread-9] | org.apache.commons.httpclient.HttpConnection:releaseConnection(1177) ----> Releasing connection back to connection manager. 
+2013-06-27 11:10:48,383 | DEBUG | [Thread-9] | MyCallWebservice.SetRingback:CallWebservice(111) ----> Call_WS_SetRingback------->MSISDN:841257034555 || Command:Search || RingbackCode: || RequestTime: || Result:702|271583|Hello 
+2013-06-27 11:10:48,384 |  INFO | [Thread-9] | class MyProcess.RingbackProcess:getMessages(119) ----> NhacCho-->UserID:841257034555|| MT:Tai khoan cua ban khong du. Vui long nap them tien vao tai khoan va thu lai. 
+2013-06-27 11:10:48,389 | DEBUG | [Thread-9] | class MyProcessServer.ContentAbstract:sendMT(227) ----> ContentAbstract_SEND_MT-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS || Info:Tai khoan cua ban khong du. Vui long nap them tien vao tai khoan va thu lai. || MessageType:1 || ContentType:21 || RequestID:1234567890 || RequestTime:2013-06-27 11:10:38.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:SEND MT THANH CONG 
+2013-06-27 11:10:48,390 |  INFO | [Thread-19] | class MyProcessServer.ExecuteInsertReceiveLog:add2SMSReceiveLog(104) ----> add2SMSReceiveLog:841257034555@NS hello 
+2013-06-27 11:50:42,934 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(144) ----> Reading configuration file config.properties 
+2013-06-27 11:50:44,675 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(116) ----> LoadConfig - Start 
+2013-06-27 11:50:45,817 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(153) ----> Loaded. 
+2013-06-27 11:50:45,817 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(268) ----> loadSMSDataTable:data.dat 
+2013-06-27 11:50:45,818 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> data.dat is empty 
+2013-06-27 11:50:45,819 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(320) ----> Deleting.....: data.dat 
+2013-06-27 11:50:45,820 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(268) ----> loadSMSDataTable:receivelog.dat 
+2013-06-27 11:50:45,820 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> receivelog.dat is empty 
+2013-06-27 11:50:45,821 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(320) ----> Deleting.....: receivelog.dat 
+2013-06-27 11:50:45,821 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(160) ----> Start: LoadMO 
+2013-06-27 11:50:45,879 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(178) ----> Start: ExecuteQueue 
+2013-06-27 11:50:45,936 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(187) ----> Start: ExecuteInsertReceiveLog 
+2013-06-27 11:50:45,955 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(416) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2013-06-27 11:50:45,967 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(399) ----> Listen MO............................................................... 
+2013-06-27 11:50:47,111 |  INFO | [Thread-6] | class MyProcessServer.LoadMO:run(121) ----> LoadMO AddToQueue-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 11:50:47.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Q:6083[Size:1] 
+2013-06-27 11:50:47,392 |  INFO | [Thread-9] | class MyProcessServer.ExecuteQueue:run(102) ----> Check Exist Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS hello || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 11:50:47.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:Keyword:NS 
+2013-06-27 11:50:47,397 |  INFO | [Thread-9] | class MyProcessServer.ExecuteQueue:processQueueMsg(182) ----> Call Class Process Keyword-->ServiceID:6083 || MSISDN:841257034555 || Keyword:NS || Info:NS hello || MessageType:0 || ContentType:0 || RequestID:1234567890 || RequestTime:2013-06-27 11:50:47.0 || ChannelType:1 || TenDV: || MaDV: || MO:NS hello ||  Note:ClassName:MyProcess.RingbackProcess 

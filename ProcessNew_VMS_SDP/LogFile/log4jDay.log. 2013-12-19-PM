@@ -1,0 +1,14 @@
+2013-12-19 14:56:50,870 | DEBUG | [main] | class MyProcessServer.LocalConfig:loadProperties(144) ----> Reading configuration file config.properties 
+2013-12-19 14:56:53,420 |  INFO | [Thread-4] | class MyProcessServer.ProcessLoadKeyword:run(115) ----> LoadConfig - Start 
+2013-12-19 14:56:56,099 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(153) ----> Loaded. 
+2013-12-19 14:56:56,100 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(268) ----> loadSMSDataTable:data.dat 
+2013-12-19 14:56:56,101 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> data.dat is empty 
+2013-12-19 14:56:56,102 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(320) ----> Deleting.....: data.dat 
+2013-12-19 14:56:56,102 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(268) ----> loadSMSDataTable:receivelog.dat 
+2013-12-19 14:56:56,103 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(277) ----> receivelog.dat is empty 
+2013-12-19 14:56:56,103 |  INFO | [main] | class MyProcessServer.ConsoleSRV:loadSMSDataTable(320) ----> Deleting.....: receivelog.dat 
+2013-12-19 14:56:56,103 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(160) ----> Start: LoadMO 
+2013-12-19 14:56:56,162 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(178) ----> Start: ExecuteQueue 
+2013-12-19 14:56:56,260 | DEBUG | [main] | class MyProcessServer.ConsoleSRV:Init(187) ----> Start: ExecuteInsertReceiveLog 
+2013-12-19 14:56:56,275 |  INFO | [Thread-0] | class MyProcessServer.ConsoleSRV:runthread(416) ----> {runthread}{Start:MyThread.MOForwardThread} 
+2013-12-19 14:56:56,305 | DEBUG | [Thread-0] | class MyProcessServer.ConsoleSRV:run(399) ----> Listen MO............................................................... 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-body>
+	<pool>
+		<alias>Gateway</alias>
+		<driver-url>jdbc:mysql://localhost/DataProcess</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-user>root</driver-user>
+		<driver-password>bavama</driver-password>
+		<livetime>120</livetime>
+		<CloseWhenFisnish>1</CloseWhenFisnish>
+	</pool>
+	<pool>
+		<alias>VOVTraffic</alias>
+		<driver-url>jdbc:sqlserver://localhost:1433;DatabaseName=MTraffic
+		</driver-url>
+		<driver-class>com.microsoft.sqlserver.jdbc.SQLServerDriver
+		</driver-class>
+		<driver-user>sa</driver-user>
+		<driver-password>bavama</driver-password>
+		<livetime>120</livetime>
+		<CloseWhenFisnish>1</CloseWhenFisnish>
+	</pool>	
+</xml-body>

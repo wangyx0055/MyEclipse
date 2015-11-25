@@ -1,0 +1,10 @@
+[PropertyInfo]
+gateway,GatewayCDR,false,false, , ,false,<default>
+keyboard,BufferedReader,false,false, , ,false,<default>
+running,boolean,false,false, , ,false,<default>
+writing,boolean,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

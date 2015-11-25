@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://server.sync.soap.alao.goldsword.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://server.sync.soap.alao.goldsword.com" xmlns:intf="http://server.sync.soap.alao.goldsword.com" xmlns:tns1="http://req.sync.soap.alao.goldsword.com" xmlns:tns2="http://common.sync.soap.alao.goldsword.com" xmlns:tns3="http://rsp.sync.soap.alao.goldsword.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://server.sync.soap.alao.goldsword.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://common.sync.soap.alao.goldsword.com"/>
+   <import namespace="http://rsp.sync.soap.alao.goldsword.com"/>
+   <import namespace="http://req.sync.soap.alao.goldsword.com"/>
+   <element name="syncChargeResult">
+    <complexType>
+     <sequence>
+      <element name="syncChargeResultReq" type="tns1:SyncChargeResultReq"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns2_NamedParameter">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns2:NamedParameter"/>
+    </sequence>
+   </complexType>
+   <element name="syncChargeResultResponse">
+    <complexType>
+     <sequence>
+      <element name="syncChargeResultReturn" type="tns3:SyncChargeResultRsp"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="syncCharge">
+    <complexType>
+     <sequence>
+      <element name="userId" type="xsd:string"/>
+      <element name="serviceId" type="xsd:string"/>
+      <element name="commandCode" type="xsd:string"/>
+      <element name="info" type="xsd:string"/>
+      <element name="requestId" type="xsd:string"/>
+      <element name="receiveDate" type="xsd:string"/>
+      <element name="operator" type="xsd:string"/>
+      <element name="userName" type="xsd:string"/>
+      <element name="password" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="syncChargeResponse">
+    <complexType>
+     <sequence>
+      <element name="syncChargeReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://common.sync.soap.alao.goldsword.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://rsp.sync.soap.alao.goldsword.com"/>
+   <import namespace="http://req.sync.soap.alao.goldsword.com"/>
+   <import namespace="http://server.sync.soap.alao.goldsword.com"/>
+   <complexType name="NamedParameter">
+    <sequence>
+     <element name="key" nillable="true" type="xsd:string"/>
+     <element name="value" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="NamedParameterList">
+    <sequence>
+     <element name="namedParameters" nillable="true" type="impl:ArrayOf_tns2_NamedParameter"/>
+    </sequence>
+   </complexType>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://req.sync.soap.alao.goldsword.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://common.sync.soap.alao.goldsword.com"/>
+   <import namespace="http://rsp.sync.soap.alao.goldsword.com"/>
+   <import namespace="http://server.sync.soap.alao.goldsword.com"/>
+   <complexType name="SyncChargeResultReq">
+    <sequence>
+     <element name="account" nillable="true" type="xsd:string"/>
+     <element name="command" nillable="true" type="xsd:string"/>
+     <element name="extensionInfo" nillable="true" type="tns2:NamedParameterList"/>
+     <element name="msisdn" nillable="true" type="xsd:string"/>
+     <element name="password" nillable="true" type="xsd:string"/>
+     <element name="result" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://rsp.sync.soap.alao.goldsword.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://common.sync.soap.alao.goldsword.com"/>
+   <import namespace="http://req.sync.soap.alao.goldsword.com"/>
+   <import namespace="http://server.sync.soap.alao.goldsword.com"/>
+   <complexType name="SyncChargeResultRsp">
+    <sequence>
+     <element name="extensionInfo" nillable="true" type="tns2:NamedParameterList"/>
+     <element name="rspResult" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="syncChargeResultResponse">
+
+      <wsdl:part element="impl:syncChargeResultResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="syncChargeResponse">
+
+      <wsdl:part element="impl:syncChargeResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="syncChargeRequest">
+
+      <wsdl:part element="impl:syncCharge" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="syncChargeResultRequest">
+
+      <wsdl:part element="impl:syncChargeResult" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="GoldSwordService">
+
+      <wsdl:operation name="syncChargeResult">
+
+         <wsdl:input message="impl:syncChargeResultRequest" name="syncChargeResultRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:syncChargeResultResponse" name="syncChargeResultResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="syncCharge">
+
+         <wsdl:input message="impl:syncChargeRequest" name="syncChargeRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:syncChargeResponse" name="syncChargeResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="GoldSwordServiceSoapBinding" type="impl:GoldSwordService">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="syncChargeResult">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="syncChargeResultRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="syncChargeResultResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="syncCharge">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="syncChargeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="syncChargeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="GoldSwordService">
+
+      <wsdl:port binding="impl:GoldSwordServiceSoapBinding" name="GoldSwordService">
+
+         <wsdlsoap:address location="http://localhost:8080/management_game/services/GoldSwordService"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

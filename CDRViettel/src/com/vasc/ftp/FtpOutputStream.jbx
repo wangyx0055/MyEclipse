@@ -1,0 +1,9 @@
+[PropertyInfo]
+client,Ftp,false,false, , ,false,<default>
+data,FtpDataSocket,false,false, , ,false,<default>
+stream,OutputStream,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

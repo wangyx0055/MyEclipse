@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="WebserviceMOMT"
+  id="myeclipse.1351736131062"
+  context-root="/WebserviceMOMT"
+  j2ee-spec="6.0"
+  archive="WebserviceMOMT.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

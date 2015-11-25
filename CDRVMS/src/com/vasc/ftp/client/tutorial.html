@@ -1,0 +1,150 @@
+<HTML><HEAD><TITLE>jFTP, Tutorial</TITLE></HEAD>
+<BODY LINK="#000080" VLINK="#000080" TEXT="BLACK" BGCOLOR="WHITE">
+
+<I>j</I><FONT SIZE=+2 COLOR="#000080"><I>FTP, Tutorial I</I></FONT><BR><BR>
+
+<FONT COLOR="#000080">Chapter I: Hello FTP</FONT><BR>
+&nbsp;&nbsp; <A HREF=#PARSE>Parsing command-line parameters</A><BR>
+&nbsp;&nbsp; <A HREF=#CONNECT>Connecting and logging into a server</A><BR>
+&nbsp;&nbsp; <A HREF=#LIST>Listing current directory</A><BR>
+&nbsp;&nbsp; <A HREF=#DISCONNECT>Disconnecting from server</A><BR>
+<A HREF=tutorial2.html>Chapter II: FTP files</A><BR><BR>
+
+Note: Basic knowledge of using FTP and Java language are prerequisites.<BR><BR>
+
+In this chapter, way of connecting to server and listing of directories will be shown.<BR><BR><BR>
+
+
+<FONT SIZE=+1 COLOR="#000080"><A NAME=PARSE>Parsing command-line parameters</A></FONT><BR><BR>
+
+Static method to parse command-line parameters is supplied.<BR><BR>
+
+<CODE>
+<FONT COLOR=gray>% java -jar jftp.jar</FONT> 
+<FONT COLOR=blue>ftp://</FONT><FONT COLOR=red>ftp.server.com/pub</FONT> 
+<FONT COLOR=blue>-user</FONT> <FONT COLOR=red>eternity</FONT><BR><BR>
+
+<FONT COLOR=blue>public static void</FONT> main<FONT COLOR=red>(</FONT>String args<FONT COLOR=red>[</FONT><FONT COLOR=red>]</FONT><FONT COLOR=red>)</FONT> <BR>
+{<BR>
+&nbsp;&nbsp; FtpConnect cn = <B>FtpConnect.newConnect</B><FONT COLOR=red>(</FONT>args<FONT COLOR=red>);</FONT><BR>
+&nbsp;&nbsp; ...<BR><BR>
+</CODE>
+
+Example shown, creates instance of FtpConnect, with these values:
+<FONT COLOR=red>ftp.server.com</FONT> - host to be connected; 
+<FONT COLOR=red>/pub</FONT> - initial directory; 
+<FONT COLOR=red>eternity</FONT> - username.<BR><BR> 
+
+Rules:<BR>
+<UL>
+<LI>If no -user parameter is used, '<FONT COLOR=red>anonymous</FONT>' will be used instead.
+<LI>If URL contains directory component, 
+this will be used as initial directory,
+instead of user's home directory.<BR>
+Example: <CODE><FONT COLOR=blue>ftp://ftp.server.com</FONT><FONT COLOR=red>/pub</FONT></CODE> 
+<LI>If URL contains port number component, 
+this will be used instead of ftp default port number 21.<BR>
+Example: <CODE><FONT COLOR=blue>ftp://ftp.server.com</FONT><FONT COLOR=red>:2121</FONT><FONT COLOR=blue>/</FONT></CODE>
+</UL>
+
+Password needs to be set separately:<BR><BR>
+
+<CODE>
+&nbsp;&nbsp; cn.<B>setPassWord</B><FONT COLOR=red>(</FONT>"my-sec-pass"<FONT COLOR=red>);</FONT><BR>
+&nbsp;&nbsp; ...<BR><BR>
+</CODE>
+
+Once this is done you can reuse it to login again and again in one simple step.<BR><BR><BR>
+
+
+<FONT SIZE=+1 COLOR="#000080"><A NAME=CONNECT>Connecting and logging into a server</A></FONT><BR><BR>
+
+<CODE>
+&nbsp;&nbsp; Ftp cl = <FONT COLOR=blue>new</FONT> <B>Ftp</B><FONT COLOR=red>(</FONT><FONT COLOR=red>);</FONT><BR>
+<BR>
+&nbsp;&nbsp; <FONT COLOR=blue>try</FONT> <BR>
+&nbsp;&nbsp; {&nbsp; <FONT COLOR=green>/* connect & login to host */</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cl.<B>connect</B><FONT COLOR=red>(</FONT>cn<FONT COLOR=red>);</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<BR>
+&nbsp;&nbsp; }<BR>
+&nbsp;&nbsp; <FONT COLOR=blue>catch</FONT> <FONT COLOR=red>(</FONT>IOException e<FONT COLOR=red>)</FONT> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { System.out.println<FONT COLOR=red>(</FONT>e<FONT COLOR=red>);</FONT> }<BR><BR>
+</CODE><BR>
+
+Connecting is done in two simple steps:<BR>
+<UL><LI>Ftp needs to be instantiated.
+<LI>It's connect method needs to be called.</UL>
+
+Also this code can be used:<BR><BR>
+
+<CODE>
+&nbsp;&nbsp; Ftp cl = <FONT COLOR=blue>new</FONT> <B>Ftp</B><FONT COLOR=red>(</FONT><FONT COLOR=red>);</FONT><BR>
+<BR>
+&nbsp;&nbsp; <FONT COLOR=blue>try</FONT><BR>
+&nbsp;&nbsp; {&nbsp; <FONT COLOR=green>/* connect & login to host */</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cl.<B>connect</B><FONT COLOR=red>(</FONT>"ftp.server.com",Ftp.PORT<FONT COLOR=red>);</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cl.<B>login</B><FONT COLOR=red>(</FONT>"my-user-name","my-sec-pass"<FONT COLOR=red>);</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<BR>
+&nbsp;&nbsp; }<BR>
+&nbsp;&nbsp; <FONT COLOR=blue>catch</FONT> <FONT COLOR=red>(</FONT>IOException e<FONT COLOR=red>)</FONT> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { System.out.println<FONT COLOR=red>(</FONT>e<FONT COLOR=red>);</FONT> }<BR>
+</CODE><BR><BR>
+
+
+<FONT SIZE=+1 COLOR="#000080"><A NAME=LIST>Listing current directory</A></FONT><BR><BR>
+
+<B>CoFile</B>, <B>FtpFile</B>, <B>LocalFile</B> and standard <B>java.io.File</B><BR><BR>
+
+CoFile defines basic interface for 'file objects'. It is designed to be similar to java.io.File.<BR>
+It doesn't stand for an specific sort of file, it might be ordinary file on your disk, or a remote FtpFile and also another file type - for example NfsFile can be implemented.<BR><BR>
+
+Reason for this is code reusability:
+<UL><LI>CoLoad can copy remote ftp file into local drive. 
+<LI>But same function can also copy local file to remote host. 
+<LI>Plus, local file can be copied into another local file. 
+<LI>Also, ftp file from one remote host can be copied directly to another remote host.</UL>
+
+Another benefit is that single swing component can be used once to display local files, second time to display remote ftp files.<BR><BR>
+
+Method pwd of Ftp object can be used to obtain current directory. This method returns a String representing current absolute pathname to directory. An instance of FtpFile is created. Note that CoFile reference is used.<BR><BR>
+
+<CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT COLOR=green>/* get current directory */</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <B>CoFile</B> dir = <FONT COLOR=blue>new</FONT> <B>FtpFile</B><FONT COLOR=red>(</FONT>cl.<B>pwd</B><FONT COLOR=red>(</FONT><FONT COLOR=red>)</FONT>,cl<FONT COLOR=red>);</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<BR><BR>
+<CODE>
+
+FtpFile instance can be then used to list contents of directory it denotes.<BR><BR>
+
+</CODE>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT COLOR=green>/* list & print current directory */</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CoFile fls<FONT COLOR=red>[</FONT><FONT COLOR=red>]</FONT> = dir.<B>listCoFiles</B><FONT COLOR=red>(</FONT><FONT COLOR=red>);</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT COLOR=blue>if</FONT><FONT COLOR=red>(</FONT>fls!=<FONT COLOR=blue>null</FONT><FONT COLOR=red>)</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT COLOR=blue>for</FONT><FONT COLOR=red>(</FONT>int n=0<FONT COLOR=red>;</FONT>n<fls.length<FONT COLOR=red>;</FONT>n++<FONT COLOR=red>)</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println<FONT COLOR=red>(</FONT>fls<FONT COLOR=red>[</FONT>n<FONT COLOR=red>]</FONT>.<B>getName</B><FONT COLOR=red>(</FONT><FONT COLOR=red>)</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT COLOR=green>/* mark dirs with slash '/' char */</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +<FONT COLOR=red>(</FONT>fls<FONT COLOR=red>[</FONT>n<FONT COLOR=red>]</FONT>.<B>isDirectory</B><FONT COLOR=red>(</FONT><FONT COLOR=red>)</FONT>?"/":""<FONT COLOR=red>)</FONT><FONT COLOR=red>);</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...<BR>
+&nbsp;&nbsp; }<BR>
+&nbsp;&nbsp; <FONT COLOR=blue>catch</FONT> <FONT COLOR=red>(</FONT>IOException e<FONT COLOR=red>)</FONT> <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { System.out.println<FONT COLOR=red>(</FONT>e<FONT COLOR=red>);</FONT> }<BR>
+</CODE><BR><BR>
+
+
+<FONT SIZE=+1 COLOR="#000080"><A NAME=DISCONNECT>Disconnecting from server</A></FONT><BR><BR>
+
+At last connection must be closed.<BR><BR>
+
+<CODE>
+&nbsp;&nbsp; <FONT COLOR=blue>finally</FONT> <BR>
+&nbsp;&nbsp; {&nbsp; <FONT COLOR=green>/* disconnect from server <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * this must be always run */</FONT><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cl.disconnect<FONT COLOR=red>(</FONT><FONT COLOR=red>);</FONT> }<BR>
+</CODE><BR>
+
+Download this example <A HREF=../tests/FtpListTest.java>FtpListTest</A>.<BR><BR>
+
+<A HREF=tutorial2.html>Click here to read next chapter</A><BR><BR><BR>
+
+</BODY>
+</HTML>

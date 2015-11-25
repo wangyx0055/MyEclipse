@@ -1,0 +1,112 @@
+2013-08-02 11:02:08,252 | DEBUG | [main] | class MyProcessServer.LocalConfig:LoadProperties(111) ----> Reading configuration file config.properties 
+2013-08-02 11:02:08,660 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(40) ----> CHECK CONNECTION SE Delay 15 Giay. 
+2013-08-02 11:02:08,661 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(41) ----> ---------------KET THUC CHECK CONNECTION -------------------- 
+2013-08-02 11:02:10,430 | ERROR | [Thread-0] | class MyProcessServer.MainProcess:run(123) ----> org.logicalcobwebs.proxool.ProxoolException: java.io.FileNotFoundException: ProxoolConfig.xml (The system cannot find the file specified) 
+2013-08-02 11:04:12,980 | DEBUG | [main] | class MyProcessServer.LocalConfig:LoadProperties(111) ----> Reading configuration file config.properties 
+2013-08-02 11:04:13,332 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(40) ----> CHECK CONNECTION SE Delay 15 Giay. 
+2013-08-02 11:04:13,332 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(41) ----> ---------------KET THUC CHECK CONNECTION -------------------- 
+2013-08-02 11:04:14,345 |  INFO | [Thread-0] | class MyProcessServer.MainProcess:LoadPushMTFail(160) ----> Load MT fail tu File:.\Data\PushFail.dat 
+2013-08-02 11:04:14,348 |  INFO | [Thread-0] | class MyProcessServer.MainProcess:LoadThreadStop(202) ----> Load Thread Stop tu file, FileName:.\Data\PUSHMT.dat 
+2013-08-02 11:04:14,349 |  WARN | [Thread-0] | class MyProcessServer.MainProcess:LoadThreadStop(220) ---->  
+2013-08-02 11:04:14,367 | DEBUG | [Thread-4] | class MyProcess.RetryPushMT:doRun(35) ----> ---------------BAT DAU RETRY THEAD STOP-------------------- 
+2013-08-02 11:04:14,388 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(44) ----> ---------------BAT DAU CHECK PUSH -------------------- 
+2013-08-02 11:04:14,370 | DEBUG | [Thread-4] | class MyProcess.RetryPushMT:doRun(182) ----> RETRY THREAD STOP SE DELAY 1 Phut. 
+2013-08-02 11:04:14,400 | DEBUG | [Thread-4] | class MyProcess.RetryPushMT:doRun(183) ----> ---------------KET THUC RETRY THEAD STOP-------------------- 
+2013-08-02 11:04:14,438 | DEBUG | [Thread-6] | class MyProcess.RetryPushMTFail:doRun(47) ----> ---------------BAT DAU RETRY PUSH MT FAIL-------------------- 
+2013-08-02 11:04:14,438 | DEBUG | [Thread-6] | class MyProcess.RetryPushMTFail:doRun(232) ----> RETRY PUSH MT SE DELAY 1 Phut. 
+2013-08-02 11:04:14,438 | DEBUG | [Thread-6] | class MyProcess.RetryPushMTFail:doRun(233) ----> ---------------KET THUC RETRY PUSH MT FAIL-------------------- 
+2013-08-02 11:04:14,544 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(99) ----> Update Thanh cong tinh trang cho tin da duoc push NewsID:514 
+2013-08-02 11:04:14,545 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(173) ----> ------------------------- 
+2013-08-02 11:04:14,545 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(174) ----> Bat dau ban tin cho dich vu:HB_diemnonggiaothong || va ban tin co NewsID:514 
+2013-08-02 11:04:14,789 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(99) ----> Update Thanh cong tinh trang cho tin da duoc push NewsID:473 
+2013-08-02 11:04:14,789 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(173) ----> ------------------------- 
+2013-08-02 11:04:14,789 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(174) ----> Bat dau ban tin cho dich vu:Khám phá mTraffic || va ban tin co NewsID:473 
+2013-08-02 11:04:15,027 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(99) ----> Update Thanh cong tinh trang cho tin da duoc push NewsID:504 
+2013-08-02 11:04:15,027 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(173) ----> ------------------------- 
+2013-08-02 11:04:15,028 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(174) ----> Bat dau ban tin cho dich vu:Hình sự mTraffic || va ban tin co NewsID:504 
+2013-08-02 11:04:15,403 | DEBUG | [Thread-11] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Khám phá mTraffic || va ban tin co NewsID:473 
+2013-08-02 11:04:15,412 | DEBUG | [Thread-12] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Khám phá mTraffic || va ban tin co NewsID:473 
+2013-08-02 11:04:15,608 | DEBUG | [Thread-15] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Hình sự mTraffic || va ban tin co NewsID:504 
+2013-08-02 11:04:15,615 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(119) ----> Khong co dich vu  nao can push MT 
+2013-08-02 11:04:15,616 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(122) ----> CHECK PUSH SE Delay 1 Phut. 
+2013-08-02 11:04:15,616 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(123) ----> ---------------KET THUC CHECK PUSH -------------------- 
+2013-08-02 11:04:15,804 | DEBUG | [Thread-13] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Khám phá mTraffic || va ban tin co NewsID:473 
+2013-08-02 11:04:16,033 | DEBUG | [Thread-14] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Khám phá mTraffic || va ban tin co NewsID:473 
+2013-08-02 11:04:16,178 | DEBUG | [Thread-16] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Hình sự mTraffic || va ban tin co NewsID:504 
+2013-08-02 11:04:16,179 | DEBUG | [Thread-18] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Hình sự mTraffic || va ban tin co NewsID:504 
+2013-08-02 11:04:16,295 | DEBUG | [Thread-17] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Hình sự mTraffic || va ban tin co NewsID:504 
+2013-08-02 11:04:18,351 | DEBUG | [Thread-9] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:HB_diemnonggiaothong || va ban tin co NewsID:514 
+2013-08-02 11:04:18,670 | DEBUG | [Thread-8] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:HB_diemnonggiaothong || va ban tin co NewsID:514 
+2013-08-02 11:04:18,771 | DEBUG | [Thread-10] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:HB_diemnonggiaothong || va ban tin co NewsID:514 
+2013-08-02 11:04:18,803 | DEBUG | [Thread-7] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:HB_diemnonggiaothong || va ban tin co NewsID:514 
+2013-08-02 11:11:39,557 | DEBUG | [main] | class MyProcessServer.LocalConfig:LoadProperties(111) ----> Reading configuration file config.properties 
+2013-08-02 11:11:39,853 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(40) ----> CHECK CONNECTION SE Delay 15 Giay. 
+2013-08-02 11:11:39,854 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(41) ----> ---------------KET THUC CHECK CONNECTION -------------------- 
+2013-08-02 11:11:41,779 |  INFO | [Thread-0] | class MyProcessServer.MainProcess:LoadPushMTFail(160) ----> Load MT fail tu File:.\Data\PushFail.dat 
+2013-08-02 11:11:41,782 |  INFO | [Thread-0] | class MyProcessServer.MainProcess:LoadThreadStop(202) ----> Load Thread Stop tu file, FileName:.\Data\PUSHMT.dat 
+2013-08-02 11:11:41,783 |  WARN | [Thread-0] | class MyProcessServer.MainProcess:LoadThreadStop(220) ---->  
+2013-08-02 11:11:41,806 | DEBUG | [Thread-4] | class MyProcess.RetryPushMT:doRun(35) ----> ---------------BAT DAU RETRY THEAD STOP-------------------- 
+2013-08-02 11:11:41,821 | DEBUG | [Thread-4] | class MyProcess.RetryPushMT:doRun(182) ----> RETRY THREAD STOP SE DELAY 1 Phut. 
+2013-08-02 11:11:41,831 | DEBUG | [Thread-4] | class MyProcess.RetryPushMT:doRun(183) ----> ---------------KET THUC RETRY THEAD STOP-------------------- 
+2013-08-02 11:11:41,838 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(44) ----> ---------------BAT DAU CHECK PUSH -------------------- 
+2013-08-02 11:11:41,863 | DEBUG | [Thread-6] | class MyProcess.RetryPushMTFail:doRun(47) ----> ---------------BAT DAU RETRY PUSH MT FAIL-------------------- 
+2013-08-02 11:11:41,864 | DEBUG | [Thread-6] | class MyProcess.RetryPushMTFail:doRun(232) ----> RETRY PUSH MT SE DELAY 1 Phut. 
+2013-08-02 11:11:41,864 | DEBUG | [Thread-6] | class MyProcess.RetryPushMTFail:doRun(233) ----> ---------------KET THUC RETRY PUSH MT FAIL-------------------- 
+2013-08-02 11:11:41,868 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(119) ----> Khong co dich vu  nao can push MT 
+2013-08-02 11:11:41,869 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(122) ----> CHECK PUSH SE Delay 1 Phut. 
+2013-08-02 11:11:41,869 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(123) ----> ---------------KET THUC CHECK PUSH -------------------- 
+2013-08-02 11:11:54,855 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(40) ----> CHECK CONNECTION SE Delay 15 Giay. 
+2013-08-02 11:11:54,855 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(41) ----> ---------------KET THUC CHECK CONNECTION -------------------- 
+2013-08-02 11:12:09,856 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(40) ----> CHECK CONNECTION SE Delay 15 Giay. 
+2013-08-02 11:12:09,856 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(41) ----> ---------------KET THUC CHECK CONNECTION -------------------- 
+2013-08-02 11:12:24,857 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(40) ----> CHECK CONNECTION SE Delay 15 Giay. 
+2013-08-02 11:12:24,857 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(41) ----> ---------------KET THUC CHECK CONNECTION -------------------- 
+2013-08-02 11:12:30,647 | DEBUG | [main] | class MyProcessServer.LocalConfig:LoadProperties(111) ----> Reading configuration file config.properties 
+2013-08-02 11:12:30,959 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(40) ----> CHECK CONNECTION SE Delay 15 Giay. 
+2013-08-02 11:12:30,959 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(41) ----> ---------------KET THUC CHECK CONNECTION -------------------- 
+2013-08-02 11:12:31,877 |  INFO | [Thread-0] | class MyProcessServer.MainProcess:LoadPushMTFail(160) ----> Load MT fail tu File:.\Data\PushFail.dat 
+2013-08-02 11:12:31,881 |  INFO | [Thread-0] | class MyProcessServer.MainProcess:LoadThreadStop(202) ----> Load Thread Stop tu file, FileName:.\Data\PUSHMT.dat 
+2013-08-02 11:12:31,882 |  WARN | [Thread-0] | class MyProcessServer.MainProcess:LoadThreadStop(220) ---->  
+2013-08-02 11:12:31,905 | DEBUG | [Thread-4] | class MyProcess.RetryPushMT:doRun(35) ----> ---------------BAT DAU RETRY THEAD STOP-------------------- 
+2013-08-02 11:12:31,920 | DEBUG | [Thread-4] | class MyProcess.RetryPushMT:doRun(182) ----> RETRY THREAD STOP SE DELAY 1 Phut. 
+2013-08-02 11:12:31,932 | DEBUG | [Thread-4] | class MyProcess.RetryPushMT:doRun(183) ----> ---------------KET THUC RETRY THEAD STOP-------------------- 
+2013-08-02 11:12:31,941 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(44) ----> ---------------BAT DAU CHECK PUSH -------------------- 
+2013-08-02 11:12:31,966 | DEBUG | [Thread-6] | class MyProcess.RetryPushMTFail:doRun(47) ----> ---------------BAT DAU RETRY PUSH MT FAIL-------------------- 
+2013-08-02 11:12:31,967 | DEBUG | [Thread-6] | class MyProcess.RetryPushMTFail:doRun(232) ----> RETRY PUSH MT SE DELAY 1 Phut. 
+2013-08-02 11:12:31,967 | DEBUG | [Thread-6] | class MyProcess.RetryPushMTFail:doRun(233) ----> ---------------KET THUC RETRY PUSH MT FAIL-------------------- 
+2013-08-02 11:12:32,423 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(99) ----> Update Thanh cong tinh trang cho tin da duoc push NewsID:214 
+2013-08-02 11:12:32,423 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(173) ----> ------------------------- 
+2013-08-02 11:12:32,424 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(174) ----> Bat dau ban tin cho dich vu:Giao thông HN || va ban tin co NewsID:214 
+2013-08-02 11:12:32,611 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(99) ----> Update Thanh cong tinh trang cho tin da duoc push NewsID:213 
+2013-08-02 11:12:32,612 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(173) ----> ------------------------- 
+2013-08-02 11:12:32,612 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(174) ----> Bat dau ban tin cho dich vu:Giao thông HCM || va ban tin co NewsID:213 
+2013-08-02 11:12:33,122 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(99) ----> Update Thanh cong tinh trang cho tin da duoc push NewsID:238 
+2013-08-02 11:12:33,123 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(173) ----> ------------------------- 
+2013-08-02 11:12:33,123 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(174) ----> Bat dau ban tin cho dich vu:HB_diemnonggiaothong || va ban tin co NewsID:238 
+2013-08-02 11:12:33,440 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(85) ----> Khong co ban tin nao ban cho dich vu:Khám phá mTraffic 
+2013-08-02 11:12:33,734 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(99) ----> Update Thanh cong tinh trang cho tin da duoc push NewsID:34 
+2013-08-02 11:12:33,734 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(173) ----> ------------------------- 
+2013-08-02 11:12:33,734 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:RunThreadPushMT(174) ----> Bat dau ban tin cho dich vu:Luật giao thông mTraffic || va ban tin co NewsID:34 
+2013-08-02 11:12:34,071 | DEBUG | [Thread-10] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Giao thông HN || va ban tin co NewsID:214 
+2013-08-02 11:12:34,130 | DEBUG | [Thread-12] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Giao thông HCM || va ban tin co NewsID:213 
+2013-08-02 11:12:34,137 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(85) ----> Khong co ban tin nao ban cho dich vu:Tư vấn mTraffic 
+2013-08-02 11:12:34,188 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(85) ----> Khong co ban tin nao ban cho dich vu:Hình sự mTraffic 
+2013-08-02 11:12:34,189 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(119) ----> Khong co dich vu  nao can push MT 
+2013-08-02 11:12:34,189 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(122) ----> CHECK PUSH SE Delay 1 Phut. 
+2013-08-02 11:12:34,189 | DEBUG | [Thread-5] | class MyProcess.CheckPushMT:doRun(123) ----> ---------------KET THUC CHECK PUSH -------------------- 
+2013-08-02 11:12:34,403 | DEBUG | [Thread-8] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Giao thông HN || va ban tin co NewsID:214 
+2013-08-02 11:12:34,661 | DEBUG | [Thread-11] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Giao thông HCM || va ban tin co NewsID:213 
+2013-08-02 11:12:34,754 | DEBUG | [Thread-7] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Giao thông HN || va ban tin co NewsID:214 
+2013-08-02 11:12:34,938 | DEBUG | [Thread-13] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Giao thông HCM || va ban tin co NewsID:213 
+2013-08-02 11:12:35,022 | DEBUG | [Thread-14] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Giao thông HCM || va ban tin co NewsID:213 
+2013-08-02 11:12:35,110 | DEBUG | [Thread-20] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Luật giao thông mTraffic || va ban tin co NewsID:34 
+2013-08-02 11:12:35,355 | DEBUG | [Thread-15] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:HB_diemnonggiaothong || va ban tin co NewsID:238 
+2013-08-02 11:12:35,431 | DEBUG | [Thread-9] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Giao thông HN || va ban tin co NewsID:214 
+2013-08-02 11:12:35,605 | DEBUG | [Thread-18] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:HB_diemnonggiaothong || va ban tin co NewsID:238 
+2013-08-02 11:12:35,605 | DEBUG | [Thread-22] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Luật giao thông mTraffic || va ban tin co NewsID:34 
+2013-08-02 11:12:35,619 | DEBUG | [Thread-19] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Luật giao thông mTraffic || va ban tin co NewsID:34 
+2013-08-02 11:12:35,643 | DEBUG | [Thread-16] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:HB_diemnonggiaothong || va ban tin co NewsID:238 
+2013-08-02 11:12:35,652 | DEBUG | [Thread-21] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:Luật giao thông mTraffic || va ban tin co NewsID:34 
+2013-08-02 11:12:35,738 | DEBUG | [Thread-17] | class MyProcess.PushMT:PushForEach(266) ----> KET THUC ban tin cho dich vu:HB_diemnonggiaothong || va ban tin co NewsID:238 
+2013-08-02 11:12:45,960 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(40) ----> CHECK CONNECTION SE Delay 15 Giay. 
+2013-08-02 11:12:45,960 | DEBUG | [Thread-2] | class MyConn.CheckConnection:doRun(41) ----> ---------------KET THUC CHECK CONNECTION -------------------- 

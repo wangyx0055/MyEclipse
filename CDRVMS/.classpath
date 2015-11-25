@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="lib/activation.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/http_client.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/mail.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/mysql-connector-java-5.1.6-bin.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/ojdbc14.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/primrose.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/soap.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="src"/>
+</classpath>

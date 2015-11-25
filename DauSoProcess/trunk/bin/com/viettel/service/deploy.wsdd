@@ -1,0 +1,38 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from IMZGW WSDL service -->
+
+  <service name="IMZGWHttpSoap11Endpoint" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://service.viettel.com"/>
+      <parameter name="wsdlServiceElement" value="IMZGW"/>
+      <parameter name="schemaQualified" value="http://service.viettel.com"/>
+      <parameter name="wsdlServicePort" value="IMZGWHttpSoap11Endpoint"/>
+      <parameter name="className" value="com.viettel.service.IMZGWSoap11BindingImpl"/>
+      <parameter name="wsdlPortType" value="IMZGWPortType"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="processCRBTs" qname="operNS:processCRBTs" xmlns:operNS="http://service.viettel.com" returnQName="retNS:return" xmlns:retNS="http://service.viettel.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="urn:processCRBTs" >
+        <parameter qname="pns:msisdn" xmlns:pns="http://service.viettel.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:providerId" xmlns:pns="http://service.viettel.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:serviceId" xmlns:pns="http://service.viettel.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:userName" xmlns:pns="http://service.viettel.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:password" xmlns:pns="http://service.viettel.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:amount" xmlns:pns="http://service.viettel.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:reqTime" xmlns:pns="http://service.viettel.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:command" xmlns:pns="http://service.viettel.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:contents" xmlns:pns="http://service.viettel.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:sourceType" xmlns:pns="http://service.viettel.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="processCRBTs"/>
+
+  </service>
+</deployment>

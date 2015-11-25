@@ -1,0 +1,178 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from CSWebServicesService WSDL service -->
+
+  <service name="CSWebServicesPort" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://webservices.cs.ipcomsa.com/"/>
+      <parameter name="wsdlServiceElement" value="CSWebServicesService"/>
+      <parameter name="schemaUnqualified" value="http://jaxb.dev.java.net/array,http://webservices.cs.ipcomsa.com/"/>
+      <parameter name="wsdlServicePort" value="CSWebServicesPort"/>
+      <parameter name="className" value="com.ipcomsa.cs.webservices.CSWebServicesBindingImpl"/>
+      <parameter name="wsdlPortType" value="CSWebServices"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="addAccount" qname="operNS:addAccount" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="planName" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="sendsms" qname="operNS:sendsms" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="message" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="addBlackListMember" qname="operNS:addBlackListMember" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="numA" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="addGreyListMember" qname="operNS:addGreyListMember" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="numA" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="forwardPhone" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="addListMember" qname="operNS:addListMember" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="numA" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="forwardPhone" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="listType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="addWhiteListMember" qname="operNS:addWhiteListMember" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="numA" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="checkCallScreening" qname="operNS:checkCallScreening" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="numA" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="callDate" type="tns:dateTime" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="checkPrefix" qname="operNS:checkPrefix" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="disableAccount" qname="operNS:disableAccount" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="enableAccount" qname="operNS:enableAccount" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getAccount" qname="operNS:getAccount" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:accountVO" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getBlackList" qname="operNS:getBlackList" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getGreyList" qname="operNS:getGreyList" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:stringArray" xmlns:rtns="http://jaxb.dev.java.net/array" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getListMapHour" qname="operNS:getListMapHour" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getTotalAccountsReport" qname="operNS:getTotalAccountsReport" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getWhiteList" qname="operNS:getWhiteList" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="modifyForwardPhone" qname="operNS:modifyForwardPhone" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="numA" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="forwardPhone" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="modifyListMapHour" qname="operNS:modifyListMapHour" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="mapHour" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="modifyPlanCharge" qname="operNS:modifyPlanCharge" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="planName" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="stCharge" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="removeAccount" qname="operNS:removeAccount" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="removeBlackListMember" qname="operNS:removeBlackListMember" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="numA" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="removeGreyListMember" qname="operNS:removeGreyListMember" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="numA" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="removeListMember" qname="operNS:removeListMember" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="numA" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="listType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="removeWhiteListMember" qname="operNS:removeWhiteListMember" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:csResponse" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="numA" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="serviceType" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="reportEventAccount" qname="operNS:reportEventAccount" xmlns:operNS="http://webservices.cs.ipcomsa.com/" returnQName="return" returnType="rtns:pagedListVO" xmlns:rtns="http://webservices.cs.ipcomsa.com/" soapAction="" >
+        <parameter qname="phoneNumber" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="fromDate" type="tns:dateTime" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="toDate" type="tns:dateTime" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="nextPage" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="maxRows" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="getWhiteList addListMember getGreyList modifyForwardPhone getTotalAccountsReport modifyPlanCharge reportEventAccount getListMapHour addAccount checkPrefix addGreyListMember enableAccount modifyListMapHour addBlackListMember removeWhiteListMember getBlackList getAccount sendsms removeAccount removeBlackListMember addWhiteListMember disableAccount checkCallScreening removeGreyListMember removeListMember"/>
+
+      <typeMapping
+        xmlns:ns="http://webservices.cs.ipcomsa.com/"
+        qname="ns:accountVO"
+        type="java:com.ipcomsa.cs.webservices.AccountVO"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://webservices.cs.ipcomsa.com/"
+        qname="ns:pagedListVO"
+        type="java:com.ipcomsa.cs.webservices.PagedListVO"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="http://jaxb.dev.java.net/array"
+        qname="ns:stringArray"
+        type="java:java.lang.String[]"
+        innerType="cmp-ns:string" xmlns:cmp-ns="http://www.w3.org/2001/XMLSchema"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://webservices.cs.ipcomsa.com/"
+        qname="ns:csResponse"
+        type="java:com.ipcomsa.cs.webservices.CsResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://webservices.cs.ipcomsa.com/"
+        qname="ns:eventVO"
+        type="java:com.ipcomsa.cs.webservices.EventVO"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

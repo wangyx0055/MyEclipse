@@ -1,0 +1,19 @@
+2013-04-10 17:16:38,219 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(48) ----> Reading configuration file FTPConfig.properties 
+2013-04-10 17:16:38,244 |  INFO | [Thread-1] | class cdr.DBScanner:run(29) ----> CDRServer: Getting data from queue table 
+2013-04-10 17:16:40,068 |  INFO | [Thread-1] | class cdr.DBScanner:run(45) ----> FTP: starting FTP cdr file 
+2013-04-10 17:16:40,076 |  INFO | [Thread-1] | class cdr.FTP2CDRServer:runftp(68) ----> No CDR file found, sleep in 1 min 
+2013-04-10 17:18:45,278 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(48) ----> Reading configuration file FTPConfig.properties 
+2013-04-10 17:18:45,388 |  INFO | [Thread-1] | class cdr.DBScanner:run(29) ----> CDRServer: Getting data from queue table 
+2013-04-10 17:19:31,183 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(48) ----> Reading configuration file FTPConfig.properties 
+2013-04-10 17:19:31,210 |  INFO | [Thread-1] | class cdr.DBScanner:run(29) ----> CDRServer: Getting data from queue table 
+2013-04-10 17:19:50,268 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(48) ----> Reading configuration file FTPConfig.properties 
+2013-04-10 17:19:50,296 |  INFO | [Thread-1] | class cdr.DBScanner:run(29) ----> CDRServer: Getting data from queue table 
+2013-04-10 17:20:51,178 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(48) ----> Reading configuration file FTPConfig.properties 
+2013-04-10 17:20:51,211 |  INFO | [Thread-1] | class cdr.DBScanner:run(29) ----> CDRServer: Getting data from queue table 
+2013-04-10 17:28:10,005 | DEBUG | [main] | class cdr.LocalConfig:loadProperties(48) ----> Reading configuration file FTPConfig.properties 
+2013-04-10 17:28:10,049 |  INFO | [Thread-1] | class cdr.DBScanner:run(30) ----> CDRServer: Getting data from queue table 
+2013-04-10 17:29:49,650 |  INFO | [Thread-1] | class cdr.DBScanner:run(51) ----> FTP: starting FTP cdr file 
+2013-04-10 17:29:59,807 |  INFO | [Thread-1] | class cdr.FTP2CDRServer:send2FtpServer(179) ----> FTP-SIZE:true 
+2013-04-10 17:29:59,815 |  INFO | [Thread-1] | class cdr.FTP2CDRServer:send2FtpServer(182) ----> FTP-RENAME: true 
+2013-04-10 17:29:59,821 |  INFO | [Thread-1] | class cdr.FTP2CDRServer:send2FtpServer(188) ----> backup file: from: .\CDROUT/HBCOM.10042013.txt to: .\CDRSENT//HBCOM.10042013.txt 
+2013-04-10 17:29:59,824 |  INFO | [Thread-1] | class cdr.FTP2CDRServer:send2FtpServer(192) ----> FTP : file name: HBCOM.10042013.txt# filesize: 152 bytes 

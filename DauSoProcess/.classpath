@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/activation.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/axis.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/axis-ant.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/classes12.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/classes12.zip"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/commons-discovery.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/commons-httpclient-3.0.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/dtd-xercesImpl.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/ejb-3_0-api.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/http_client.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/javassist.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/javax.jms.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/jbossall-client-4.0.5-GA.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/jboss-aop.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/jboss-common-core.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/jboss-j2se.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/jboss-jmx.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/jboss-messaging.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/jboss-messaging-client.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/jms.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/jmxri.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/jpool.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/junit.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/mail.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/mysql-connector-java-5.0.5-bin.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/primrose.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/ProcessServer.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/proxool-0.9.0RC3.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/saaj.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/SB.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/SMSSender.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/smtp.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/soap.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/trove.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/unittest.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/wsdl4j.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/wsdl4j-1.5.1.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Process 8x51/lib/xstream-1.2.1.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/java/subscription/subscription/WEB-INF/lib/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/java/subscription/subscription/WEB-INF/lib/jCharts-0.7.5.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/java/subscription/subscription/WEB-INF/lib/junit-4.4.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/java/subscription/subscription/WEB-INF/lib/jxl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC01/AppData/Local/Genuitec/Common/plugins/com.genuitec.eclipse.j2eedt.core_7.5.0.zmyeclipse75020090612/data/libraryset/1.4/javax.servlet.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC01/AppData/Local/Genuitec/Common/plugins/com.genuitec.eclipse.j2eedt.core_7.5.0.zmyeclipse75020090612/data/libraryset/1.4/javax.servlet.jsp.jar"/>
+	<classpathentry kind="lib" path="D:/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="E:/Miss Loan/Doccument/lib/sqljdbc.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
